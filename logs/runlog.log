@@ -1,0 +1,1092 @@
+2019-07-02 14:36:39,402 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:37:05,765 run.py[line:87] INFO start run test case...
+2019-07-02 14:37:05,765 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 14:37:05,767 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 14:54:05,454 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:54:25,427 run.py[line:78] INFO start run test case...
+2019-07-02 14:54:25,427 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 14:54:25,429 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 14:54:44,579 test_1_login.py[line:13] INFO ======test_login_wechat=====
+2019-07-02 14:54:44,579 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 14:54:46,172 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 14:54:54,927 common_fun.py[line:30] INFO ==一说宝宝引导==
+2019-07-02 14:55:00,105 common_fun.py[line:148] INFO ====检查优惠券====
+2019-07-02 14:55:07,395 wechatLogin.py[line:26] INFO ============login_action==============
+2019-07-02 14:55:08,320 wechatLogin.py[line:28] INFO login finished!
+2019-07-02 14:55:08,320 wechatLogin.py[line:31] INFO ====check_loginStatus======
+2019-07-02 14:55:14,331 wechatLogin.py[line:40] INFO login success!
+2019-07-02 14:55:14,331 wechatLogin.py[line:45] INFO =====logout_action======
+2019-07-02 14:55:19,323 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 14:55:24,674 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 14:55:24,677 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 14:55:45,819 test_1_login.py[line:21] INFO ======test_login_13928413356=====
+2019-07-02 14:55:45,819 common_fun.py[line:170] INFO =====get_csv_data======
+2019-07-02 14:55:45,831 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 14:55:47,411 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 14:55:52,952 loginView.py[line:15] INFO ===引导页登录====
+2019-07-02 14:55:53,396 loginView.py[line:18] INFO ============login_action==============
+2019-07-02 14:55:53,396 loginView.py[line:19] INFO username is:15818695630
+2019-07-02 14:55:59,504 loginView.py[line:22] INFO password is:123456
+2019-07-02 14:56:05,349 loginView.py[line:25] INFO click loginBtn
+2019-07-02 14:56:06,179 loginView.py[line:27] INFO login finished!
+2019-07-02 14:56:06,179 loginView.py[line:30] INFO ====check_loginStatus======
+2019-07-02 14:56:14,640 loginView.py[line:34] ERROR login Fail!
+2019-07-02 14:56:14,641 common_fun.py[line:144] INFO get login fail screenshot
+2019-07-02 14:56:16,041 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 14:56:21,450 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:56:21,452 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:56:41,899 test_2_radio.py[line:9] INFO ======test_radio=====
+2019-07-02 14:56:41,899 radioStation.py[line:14] INFO ===动态-电台====
+2019-07-02 14:56:41,964 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:56:47,477 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:56:47,479 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:57:08,347 test_friend.py[line:10] INFO ======test_friends=====
+2019-07-02 14:57:08,838 friend.py[line:42] INFO ===搜索已添加好友===
+2019-07-02 14:57:09,378 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:57:14,783 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:57:14,785 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:57:33,429 test_friend.py[line:16] INFO ======test_newfriend=====
+2019-07-02 14:57:33,948 friend.py[line:98] INFO ===新的朋友===
+2019-07-02 14:57:34,484 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:57:39,930 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:57:39,934 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:58:00,377 test_friend.py[line:22] INFO ======test_thirdfriend=====
+2019-07-02 14:58:00,836 friend.py[line:62] INFO ===新的朋友-第三方===
+2019-07-02 14:58:01,390 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:58:06,789 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:58:06,793 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:58:25,632 test_group.py[line:10] INFO ======test_group=====
+2019-07-02 14:58:25,633 group.py[line:46] INFO ===申请加入群组====
+2019-07-02 14:58:26,118 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 14:58:26,648 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 14:58:26,706 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:58:32,066 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:58:32,067 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:58:51,825 test_hardcover.py[line:28] INFO ======test_buyalbums=====
+2019-07-02 14:58:52,091 hardcover.py[line:99] INFO ===我的已购专辑===
+2019-07-02 14:58:53,844 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:58:59,238 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:58:59,241 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:59:18,533 test_hardcover.py[line:16] INFO ======test_heavyfine=====
+2019-07-02 14:59:19,288 hardcover.py[line:56] INFO ===重磅精品+声音===
+2019-07-02 14:59:19,288 common_fun.py[line:83] INFO swipeUp
+2019-07-02 14:59:24,983 hardcover.py[line:68] INFO 重磅精品正确
+2019-07-02 14:59:24,983 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 14:59:30,411 myunit.py[line:8] INFO =====setUp====
+2019-07-02 14:59:30,413 desired_caps.py[line:33] INFO start app...
+2019-07-02 14:59:49,012 test_hardcover.py[line:22] INFO ======test_newalbum=====
+2019-07-02 14:59:49,761 common_fun.py[line:83] INFO swipeUp
+2019-07-02 14:59:51,358 hardcover.py[line:75] INFO ===最新上架+加入心愿单===
+2019-07-02 14:59:55,181 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:00:00,716 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:00:00,720 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:00:23,835 test_hardcover.py[line:10] INFO ======test_todayrecomend=====
+2019-07-02 15:00:23,835 hardcover.py[line:33] INFO ===今日特推===
+2019-07-02 15:00:29,433 hardcover.py[line:40] ERROR 精装数据加载失败！
+2019-07-02 15:00:29,433 common_fun.py[line:144] INFO get 精装数据加载失败！ screenshot
+2019-07-02 15:00:30,781 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:00:36,275 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:00:36,277 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:00:56,627 test_icon.py[line:11] INFO ======test_personal=====
+2019-07-02 15:00:58,657 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:01:04,067 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:01:04,070 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:01:23,069 test_message.py[line:10] INFO ======test_delete_message=====
+2019-07-02 15:01:23,564 message.py[line:19] INFO ===清空与我相关===
+2019-07-02 15:01:24,122 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:01:29,537 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:01:29,539 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:01:49,007 recommended.py[line:25] INFO ===播放儿童故事===
+2019-07-02 15:01:52,526 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:01:57,911 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:01:57,913 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:02:16,753 recommended.py[line:38] INFO ===推荐界面检查===
+2019-07-02 15:02:16,753 common_fun.py[line:83] INFO swipeUp
+2019-07-02 15:02:18,996 common_fun.py[line:83] INFO swipeUp
+2019-07-02 15:02:22,463 recommended.py[line:46] ERROR 专辑数据加载失败！
+2019-07-02 15:02:22,463 common_fun.py[line:144] INFO get 专辑数据加载失败！ screenshot
+2019-07-02 15:02:23,803 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:02:29,488 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:02:29,492 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:02:53,750 recommended.py[line:54] INFO ===关注主播===
+2019-07-02 15:02:54,165 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:02:54,955 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:03:00,381 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:03:00,384 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:03:20,911 test_recording.py[line:11] INFO ======test_recording=====
+2019-07-02 15:03:22,861 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:03:28,338 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:03:28,341 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:03:47,320 test_recording.py[line:21] INFO ======test_upload_voice=====
+2019-07-02 15:03:49,203 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:03:54,649 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:03:54,651 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:04:13,969 test_search.py[line:10] INFO ======test_search=====
+2019-07-02 15:04:13,969 search.py[line:17] INFO ===搜索====
+2019-07-02 15:04:20,745 search.py[line:23] INFO ====check search_voice======
+2019-07-02 15:04:23,584 search.py[line:31] INFO search_voice success!
+2019-07-02 15:04:24,579 search.py[line:37] INFO ====check search_user======
+2019-07-02 15:04:27,082 search.py[line:45] INFO search_user success!
+2019-07-02 15:04:27,377 search.py[line:51] INFO ====check search_album======
+2019-07-02 15:04:29,031 search.py[line:59] INFO search_album success!
+2019-07-02 15:04:29,031 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:04:34,427 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:04:34,430 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:04:53,953 test_set.py[line:10] INFO ======test_sets=====
+2019-07-02 15:05:01,254 set.py[line:25] INFO ===检查关于一说宝宝===
+2019-07-02 15:05:04,434 set.py[line:33] INFO 官方信息正常
+2019-07-02 15:05:07,628 set.py[line:36] INFO ===检查错误验证码能否使用===
+2019-07-02 15:05:07,831 set.py[line:40] ERROR 长连接断开！
+2019-07-02 15:05:07,831 common_fun.py[line:144] INFO get 长连接断开！ screenshot
+2019-07-02 15:05:09,206 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:05:14,609 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:05:14,613 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:05:36,467 test_subscribe.py[line:10] INFO ======test_subscribes_play=====
+2019-07-02 15:05:36,467 subscribe.py[line:78] INFO ===播放大家都在听中专辑声音====
+2019-07-02 15:05:36,983 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 15:05:37,517 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 15:05:37,561 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:05:43,015 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:05:43,017 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:06:02,373 test_subscribe.py[line:19] INFO ======test_subscribe=====
+2019-07-02 15:06:02,373 subscribe.py[line:23] INFO ===订阅大家都在听====
+2019-07-02 15:06:03,376 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:06:08,735 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:06:08,738 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:06:27,673 test_subscribe.py[line:28] INFO ======test_subscribe_play=====
+2019-07-02 15:06:27,673 subscribe.py[line:52] INFO ===播放我的订阅中专辑声音====
+2019-07-02 15:06:29,235 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:06:34,646 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:06:34,648 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:06:54,147 player.py[line:36] INFO ===转发声音===
+2019-07-02 15:06:57,026 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:07:02,424 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:07:02,426 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:07:22,329 test_z_player.py[line:26] INFO ===举报、下载、分享
+2019-07-02 15:07:24,650 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:07:30,041 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:07:30,044 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:07:52,944 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:07:58,667 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:07:58,670 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:08:32,394 player.py[line:89] ERROR 评论失败!
+2019-07-02 15:08:32,394 common_fun.py[line:144] INFO get 评论失败! screenshot
+2019-07-02 15:08:33,736 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:36:38,947 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:36:59,875 run.py[line:78] INFO start run test case...
+2019-07-02 15:36:59,876 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 15:36:59,878 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 15:37:19,533 test_1_login.py[line:13] INFO ======test_login_wechat=====
+2019-07-02 15:37:19,533 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:37:21,109 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:37:29,846 common_fun.py[line:30] INFO ==一说宝宝引导==
+2019-07-02 15:37:35,014 common_fun.py[line:148] INFO ====检查优惠券====
+2019-07-02 15:37:39,677 wechatLogin.py[line:26] INFO ============login_action==============
+2019-07-02 15:37:40,713 wechatLogin.py[line:28] INFO login finished!
+2019-07-02 15:37:40,713 wechatLogin.py[line:31] INFO ====check_loginStatus======
+2019-07-02 15:37:44,398 wechatLogin.py[line:40] INFO login success!
+2019-07-02 15:37:44,398 wechatLogin.py[line:45] INFO =====logout_action======
+2019-07-02 15:37:48,931 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 15:37:54,259 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 15:37:54,263 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 15:38:14,297 test_1_login.py[line:21] INFO ======test_login_13928413356=====
+2019-07-02 15:38:14,297 common_fun.py[line:170] INFO =====get_csv_data======
+2019-07-02 15:38:14,305 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:38:15,916 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:38:21,501 loginView.py[line:15] INFO ===引导页登录====
+2019-07-02 15:38:21,947 loginView.py[line:18] INFO ============login_action==============
+2019-07-02 15:38:21,947 loginView.py[line:19] INFO username is:15818695630
+2019-07-02 15:38:27,826 loginView.py[line:22] INFO password is:123456
+2019-07-02 15:38:33,831 loginView.py[line:25] INFO click loginBtn
+2019-07-02 15:38:34,615 loginView.py[line:27] INFO login finished!
+2019-07-02 15:38:34,615 loginView.py[line:30] INFO ====check_loginStatus======
+2019-07-02 15:38:38,635 loginView.py[line:38] INFO login success!
+2019-07-02 15:38:38,635 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 15:38:44,032 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:38:44,035 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:39:02,585 test_2_radio.py[line:9] INFO ======test_radio=====
+2019-07-02 15:39:02,586 radioStation.py[line:14] INFO ===动态-电台====
+2019-07-02 15:39:05,817 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 15:39:09,487 common_fun.py[line:83] INFO swipeUp
+2019-07-02 15:39:12,221 radioStation.py[line:27] ERROR radio_play fail!
+2019-07-02 15:39:12,221 common_fun.py[line:144] INFO get radio_play fail! screenshot
+2019-07-02 15:39:13,351 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:39:18,763 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:39:18,766 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:39:37,599 test_friend.py[line:10] INFO ======test_friends=====
+2019-07-02 15:39:38,035 friend.py[line:42] INFO ===搜索已添加好友===
+2019-07-02 15:39:48,416 friend.py[line:53] INFO 搜索好友成功
+2019-07-02 15:39:48,416 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:39:53,849 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:39:53,851 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:40:13,344 test_friend.py[line:16] INFO ======test_newfriend=====
+2019-07-02 15:40:13,691 friend.py[line:98] INFO ===新的朋友===
+2019-07-02 15:40:21,685 friend.py[line:110] INFO 跳转通讯录好友界面
+2019-07-02 15:40:36,976 friend.py[line:124] ERROR 没有该用户！
+2019-07-02 15:40:36,976 common_fun.py[line:144] INFO get 没有该用户！ screenshot
+2019-07-02 15:40:38,073 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:40:43,514 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:40:43,515 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:41:01,927 test_friend.py[line:22] INFO ======test_thirdfriend=====
+2019-07-02 15:41:02,279 friend.py[line:62] INFO ===新的朋友-第三方===
+2019-07-02 15:41:09,829 friend.py[line:69] ERROR 新浪微博好友页面加载失败！
+2019-07-02 15:41:09,829 common_fun.py[line:144] INFO get 新浪微博好友页面加载失败！ screenshot
+2019-07-02 15:41:10,995 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:41:16,365 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:41:16,368 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:41:34,811 test_group.py[line:10] INFO ======test_group=====
+2019-07-02 15:41:34,811 group.py[line:46] INFO ===申请加入群组====
+2019-07-02 15:41:34,913 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:41:39,992 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:41:39,994 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:41:57,793 test_hardcover.py[line:28] INFO ======test_buyalbums=====
+2019-07-02 15:41:58,019 hardcover.py[line:99] INFO ===我的已购专辑===
+2019-07-02 15:41:59,800 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:42:05,362 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:42:05,364 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:42:24,504 test_hardcover.py[line:16] INFO ======test_heavyfine=====
+2019-07-02 15:42:25,248 hardcover.py[line:56] INFO ===重磅精品+声音===
+2019-07-02 15:42:25,248 common_fun.py[line:83] INFO swipeUp
+2019-07-02 15:42:30,687 hardcover.py[line:68] INFO 重磅精品正确
+2019-07-02 15:42:30,687 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:42:35,698 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:42:35,701 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:43:11,693 test_hardcover.py[line:22] INFO ======test_newalbum=====
+2019-07-02 15:43:12,414 common_fun.py[line:83] INFO swipeUp
+2019-07-02 15:43:13,972 hardcover.py[line:75] INFO ===最新上架+加入心愿单===
+2019-07-02 15:43:19,706 hardcover.py[line:90] INFO 加入心愿单成功
+2019-07-02 15:43:19,706 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:43:25,145 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:43:25,147 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:43:43,762 test_hardcover.py[line:10] INFO ======test_todayrecomend=====
+2019-07-02 15:43:43,762 hardcover.py[line:33] INFO ===今日特推===
+2019-07-02 15:43:49,286 hardcover.py[line:40] ERROR 精装数据加载失败！
+2019-07-02 15:43:49,286 common_fun.py[line:144] INFO get 精装数据加载失败！ screenshot
+2019-07-02 15:43:50,644 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:43:56,084 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:43:56,087 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:44:15,140 test_icon.py[line:11] INFO ======test_personal=====
+2019-07-02 15:54:40,676 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:54:45,768 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:54:45,771 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:55:05,353 test_message.py[line:10] INFO ======test_delete_message=====
+2019-07-02 15:55:05,759 message.py[line:19] INFO ===清空与我相关===
+2019-07-02 15:55:11,041 message.py[line:24] INFO ===清空通知===
+2019-07-02 15:55:16,092 message.py[line:29] INFO ===清空群组通知===
+2019-07-02 15:55:20,713 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 15:55:26,195 myunit.py[line:8] INFO =====setUp====
+2019-07-02 15:55:26,197 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:59:19,173 desired_caps.py[line:33] INFO start app...
+2019-07-02 15:59:20,572 run.py[line:78] INFO start run test case...
+2019-07-02 15:59:20,573 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 15:59:20,576 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 15:59:45,849 test_1_login.py[line:13] INFO ======test_login_wechat=====
+2019-07-02 15:59:45,849 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:59:47,523 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 15:59:56,269 common_fun.py[line:30] INFO ==一说宝宝引导==
+2019-07-02 16:00:01,439 common_fun.py[line:148] INFO ====检查优惠券====
+2019-07-02 16:00:06,209 wechatLogin.py[line:26] INFO ============login_action==============
+2019-07-02 16:00:07,211 wechatLogin.py[line:28] INFO login finished!
+2019-07-02 16:00:07,211 wechatLogin.py[line:31] INFO ====check_loginStatus======
+2019-07-02 16:00:10,592 wechatLogin.py[line:40] INFO login success!
+2019-07-02 16:00:10,592 wechatLogin.py[line:45] INFO =====logout_action======
+2019-07-02 16:00:14,964 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 16:00:20,425 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 16:00:20,427 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 16:00:40,221 test_1_login.py[line:21] INFO ======test_login_13928413356=====
+2019-07-02 16:00:40,221 common_fun.py[line:170] INFO =====get_csv_data======
+2019-07-02 16:00:40,277 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:00:41,895 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:00:47,434 loginView.py[line:15] INFO ===引导页登录====
+2019-07-02 16:00:47,881 loginView.py[line:18] INFO ============login_action==============
+2019-07-02 16:00:47,882 loginView.py[line:19] INFO username is:15818695630
+2019-07-02 16:00:53,887 loginView.py[line:22] INFO password is:123456
+2019-07-02 16:00:59,804 loginView.py[line:25] INFO click loginBtn
+2019-07-02 16:01:00,617 loginView.py[line:27] INFO login finished!
+2019-07-02 16:01:00,617 loginView.py[line:30] INFO ====check_loginStatus======
+2019-07-02 16:01:05,162 loginView.py[line:38] INFO login success!
+2019-07-02 16:01:05,162 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 16:01:10,548 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:01:10,551 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:01:29,944 test_2_radio.py[line:9] INFO ======test_radio=====
+2019-07-02 16:01:29,944 radioStation.py[line:14] INFO ===动态-电台====
+2019-07-02 16:01:33,171 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 16:01:34,568 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:01:37,652 radioStation.py[line:33] INFO ====check_radio_play======
+2019-07-02 16:01:38,841 radioStation.py[line:35] INFO 点播: 七月，在淡定中开始
+2019-07-02 16:01:43,398 radioStation.py[line:44] INFO 播放: 七月,在淡定中开始
+2019-07-02 16:01:43,398 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:01:48,740 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:01:48,744 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:02:08,131 test_friend.py[line:10] INFO ======test_friends=====
+2019-07-02 16:02:08,493 friend.py[line:42] INFO ===搜索已添加好友===
+2019-07-02 16:02:18,476 friend.py[line:53] INFO 搜索好友成功
+2019-07-02 16:02:18,476 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:02:23,890 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:02:23,895 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:02:42,446 test_friend.py[line:16] INFO ======test_newfriend=====
+2019-07-02 16:02:42,800 friend.py[line:98] INFO ===新的朋友===
+2019-07-02 16:02:50,757 friend.py[line:110] INFO 跳转通讯录好友界面
+2019-07-02 16:03:04,766 friend.py[line:128] INFO 搜索用户成功
+2019-07-02 16:03:04,766 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:03:10,198 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:03:10,201 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:03:29,236 test_friend.py[line:22] INFO ======test_thirdfriend=====
+2019-07-02 16:03:29,602 friend.py[line:62] INFO ===新的朋友-第三方===
+2019-07-02 16:03:37,471 friend.py[line:69] ERROR 新浪微博好友页面加载失败！
+2019-07-02 16:03:37,471 common_fun.py[line:144] INFO get 新浪微博好友页面加载失败！ screenshot
+2019-07-02 16:03:38,536 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:03:44,068 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:03:44,071 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:04:04,591 test_group.py[line:10] INFO ======test_group=====
+2019-07-02 16:04:04,591 group.py[line:46] INFO ===申请加入群组====
+2019-07-02 16:04:05,118 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 16:04:06,029 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 16:04:08,416 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:04:13,888 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:04:13,890 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:04:33,638 test_hardcover.py[line:28] INFO ======test_buyalbums=====
+2019-07-02 16:04:33,871 hardcover.py[line:99] INFO ===我的已购专辑===
+2019-07-02 16:04:35,647 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:04:41,154 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:04:41,157 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:05:03,184 test_hardcover.py[line:16] INFO ======test_heavyfine=====
+2019-07-02 16:05:03,929 hardcover.py[line:56] INFO ===重磅精品+声音===
+2019-07-02 16:05:03,929 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:05:09,256 hardcover.py[line:68] INFO 重磅精品正确
+2019-07-02 16:05:09,256 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:05:14,811 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:05:14,814 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:05:35,837 test_hardcover.py[line:22] INFO ======test_newalbum=====
+2019-07-02 16:05:36,594 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:05:38,249 hardcover.py[line:75] INFO ===最新上架+加入心愿单===
+2019-07-02 16:05:46,314 hardcover.py[line:90] INFO 加入心愿单成功
+2019-07-02 16:05:46,314 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:05:51,717 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:05:51,719 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:06:10,718 test_hardcover.py[line:10] INFO ======test_todayrecomend=====
+2019-07-02 16:06:10,718 hardcover.py[line:33] INFO ===今日特推===
+2019-07-02 16:06:14,447 hardcover.py[line:46] INFO 今日特推专辑正确
+2019-07-02 16:06:14,447 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:06:24,604 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:06:24,607 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:06:45,306 test_icon.py[line:11] INFO ======test_personal=====
+2019-07-02 16:07:26,220 icon.py[line:41] INFO 修改个人信息成功
+2019-07-02 16:07:26,221 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:07:31,681 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:07:31,683 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:07:50,673 test_message.py[line:10] INFO ======test_delete_message=====
+2019-07-02 16:07:51,011 message.py[line:19] INFO ===清空与我相关===
+2019-07-02 16:07:56,193 message.py[line:24] INFO ===清空通知===
+2019-07-02 16:08:01,169 message.py[line:29] INFO ===清空群组通知===
+2019-07-02 16:08:05,791 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:08:11,182 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:08:11,186 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:08:32,318 recommended.py[line:25] INFO ===播放儿童故事===
+2019-07-02 16:08:35,926 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:08:41,353 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:08:41,355 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:09:02,809 recommended.py[line:38] INFO ===推荐界面检查===
+2019-07-02 16:09:02,809 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:09:05,053 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:09:11,642 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:09:17,054 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:09:17,058 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:09:37,433 recommended.py[line:54] INFO ===关注主播===
+2019-07-02 16:09:37,823 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:09:38,631 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:09:44,084 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:09:44,087 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:10:04,280 test_recording.py[line:11] INFO ======test_recording=====
+2019-07-02 16:11:27,782 recording.py[line:68] INFO 录音发布成功！
+2019-07-02 16:11:27,782 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:11:33,165 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:11:33,168 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:11:53,855 test_recording.py[line:21] INFO ======test_upload_voice=====
+2019-07-02 16:12:51,271 recording.py[line:95] INFO 录音发布成功！
+2019-07-02 16:12:51,272 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:12:56,653 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:12:56,657 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:13:15,531 test_search.py[line:10] INFO ======test_search=====
+2019-07-02 16:13:15,531 search.py[line:17] INFO ===搜索====
+2019-07-02 16:13:21,927 search.py[line:23] INFO ====check search_voice======
+2019-07-02 16:13:24,094 search.py[line:31] INFO search_voice success!
+2019-07-02 16:13:25,047 search.py[line:37] INFO ====check search_user======
+2019-07-02 16:13:26,996 search.py[line:45] INFO search_user success!
+2019-07-02 16:13:27,234 search.py[line:51] INFO ====check search_album======
+2019-07-02 16:13:28,301 search.py[line:59] INFO search_album success!
+2019-07-02 16:13:28,301 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:13:33,732 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:13:33,736 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:13:52,493 test_set.py[line:10] INFO ======test_sets=====
+2019-07-02 16:13:59,852 set.py[line:25] INFO ===检查关于一说宝宝===
+2019-07-02 16:14:03,017 set.py[line:33] INFO 官方信息正常
+2019-07-02 16:14:06,211 set.py[line:36] INFO ===检查错误验证码能否使用===
+2019-07-02 16:14:06,262 set.py[line:40] ERROR 长连接断开！
+2019-07-02 16:14:06,262 common_fun.py[line:144] INFO get 长连接断开！ screenshot
+2019-07-02 16:14:07,510 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:14:12,903 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:14:12,904 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:14:31,651 test_subscribe.py[line:10] INFO ======test_subscribes_play=====
+2019-07-02 16:14:31,651 subscribe.py[line:78] INFO ===播放大家都在听中专辑声音====
+2019-07-02 16:14:32,224 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 16:14:33,040 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 16:14:35,507 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:36,961 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:38,440 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:39,904 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:41,406 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:42,874 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:44,347 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:45,844 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:47,340 common_fun.py[line:92] INFO swipeUp
+2019-07-02 16:14:51,357 subscribe.py[line:91] INFO 大家都在听专辑数据加载成功！
+2019-07-02 16:14:51,357 subscribe.py[line:60] INFO ===检查播放专辑声音====
+2019-07-02 16:14:52,765 subscribe.py[line:62] INFO 点播: 第489章 韦小宝
+2019-07-02 16:15:17,904 subscribe.py[line:66] INFO 播放: 第489章 韦小宝
+2019-07-02 16:15:17,904 subscribe.py[line:70] INFO subscribe_play success!
+2019-07-02 16:15:17,904 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:15:23,327 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:15:23,330 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:15:43,075 test_subscribe.py[line:19] INFO ======test_subscribe=====
+2019-07-02 16:15:43,075 subscribe.py[line:23] INFO ===订阅大家都在听====
+2019-07-02 16:15:45,594 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:15:47,773 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:15:49,885 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:15:52,205 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:15:54,376 subscribe.py[line:31] INFO 专辑：重生八零：军长，宠上天
+2019-07-02 16:16:00,877 subscribe.py[line:41] INFO 专辑：重生八零：军长，宠上天
+2019-07-02 16:16:00,877 subscribe.py[line:43] ERROR subscribe fail!
+2019-07-02 16:16:00,877 common_fun.py[line:144] INFO get subscribe fail! screenshot
+2019-07-02 16:16:02,547 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:16:07,964 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:16:07,966 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:16:27,166 test_subscribe.py[line:28] INFO ======test_subscribe_play=====
+2019-07-02 16:16:27,166 subscribe.py[line:52] INFO ===播放我的订阅中专辑声音====
+2019-07-02 16:16:29,987 subscribe.py[line:60] INFO ===检查播放专辑声音====
+2019-07-02 16:16:31,449 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:16:36,935 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:16:36,937 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:16:56,980 player.py[line:36] INFO ===转发声音===
+2019-07-02 16:17:00,220 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:17:05,621 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:17:05,624 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:17:26,303 test_z_player.py[line:26] INFO ===举报、下载、分享
+2019-07-02 16:17:42,321 player.py[line:60] INFO 举报成功
+2019-07-02 16:17:42,322 player.py[line:62] INFO ===点击下载===
+2019-07-02 16:17:48,743 player.py[line:69] ERROR Share voice fail!
+2019-07-02 16:17:48,743 common_fun.py[line:144] INFO get Share voice fail! screenshot
+2019-07-02 16:17:51,513 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:17:56,832 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:17:56,835 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:18:20,775 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:18:26,144 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:18:26,148 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:18:59,056 player.py[line:89] ERROR 评论失败!
+2019-07-02 16:18:59,056 common_fun.py[line:144] INFO get 评论失败! screenshot
+2019-07-02 16:19:00,346 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:33:34,480 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:33:56,851 run.py[line:78] INFO start run test case...
+2019-07-02 16:33:56,851 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 16:33:56,853 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 16:34:17,147 test_1_login.py[line:13] INFO ======test_login_wechat=====
+2019-07-02 16:34:17,147 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:34:18,767 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:34:27,495 common_fun.py[line:30] INFO ==一说宝宝引导==
+2019-07-02 16:34:32,664 common_fun.py[line:148] INFO ====检查优惠券====
+2019-07-02 16:34:37,432 wechatLogin.py[line:26] INFO ============login_action==============
+2019-07-02 16:34:38,691 wechatLogin.py[line:28] INFO login finished!
+2019-07-02 16:34:38,691 wechatLogin.py[line:31] INFO ====check_loginStatus======
+2019-07-02 16:34:41,604 wechatLogin.py[line:40] INFO login success!
+2019-07-02 16:34:41,604 wechatLogin.py[line:45] INFO =====logout_action======
+2019-07-02 16:34:45,890 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 16:34:51,291 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 16:34:51,294 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 16:35:12,746 test_1_login.py[line:21] INFO ======test_login_13928413356=====
+2019-07-02 16:35:12,746 common_fun.py[line:170] INFO =====get_csv_data======
+2019-07-02 16:35:12,765 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:35:14,391 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:35:19,933 loginView.py[line:15] INFO ===引导页登录====
+2019-07-02 16:35:20,378 loginView.py[line:18] INFO ============login_action==============
+2019-07-02 16:35:20,378 loginView.py[line:19] INFO username is:15818695630
+2019-07-02 16:35:26,304 loginView.py[line:22] INFO password is:123456
+2019-07-02 16:35:32,204 loginView.py[line:25] INFO click loginBtn
+2019-07-02 16:35:33,001 loginView.py[line:27] INFO login finished!
+2019-07-02 16:35:33,001 loginView.py[line:30] INFO ====check_loginStatus======
+2019-07-02 16:35:41,483 loginView.py[line:34] ERROR login Fail!
+2019-07-02 16:35:41,483 common_fun.py[line:144] INFO get login fail screenshot
+2019-07-02 16:35:42,812 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 16:35:48,316 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:35:48,318 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:36:08,034 test_2_radio.py[line:9] INFO ======test_radio=====
+2019-07-02 16:36:08,034 radioStation.py[line:14] INFO ===动态-电台====
+2019-07-02 16:36:08,115 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:36:13,618 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:36:13,620 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:36:33,879 test_friend.py[line:10] INFO ======test_friends=====
+2019-07-02 16:36:34,396 friend.py[line:42] INFO ===搜索已添加好友===
+2019-07-02 16:36:34,939 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:36:40,318 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:36:40,320 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:37:01,194 test_friend.py[line:16] INFO ======test_newfriend=====
+2019-07-02 16:37:01,688 friend.py[line:98] INFO ===新的朋友===
+2019-07-02 16:37:02,269 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:37:07,709 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:37:07,712 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:37:35,568 test_friend.py[line:22] INFO ======test_thirdfriend=====
+2019-07-02 16:37:36,067 friend.py[line:62] INFO ===新的朋友-第三方===
+2019-07-02 16:37:36,623 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:37:42,114 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:37:42,117 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:38:02,944 test_group.py[line:10] INFO ======test_group=====
+2019-07-02 16:38:02,944 group.py[line:46] INFO ===申请加入群组====
+2019-07-02 16:38:03,453 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 16:38:03,969 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 16:38:04,062 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:38:09,431 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:38:09,433 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:38:28,275 test_hardcover.py[line:28] INFO ======test_buyalbums=====
+2019-07-02 16:38:28,514 hardcover.py[line:99] INFO ===我的已购专辑===
+2019-07-02 16:38:30,442 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:38:35,865 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:38:35,867 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:38:56,101 test_hardcover.py[line:16] INFO ======test_heavyfine=====
+2019-07-02 16:38:56,861 hardcover.py[line:56] INFO ===重磅精品+声音===
+2019-07-02 16:38:56,861 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:39:01,699 hardcover.py[line:64] ERROR 精装声音数据加载失败！
+2019-07-02 16:39:01,700 common_fun.py[line:144] INFO get 精装声音数据加载失败！ screenshot
+2019-07-02 16:39:03,094 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:39:08,516 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:39:08,519 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:39:28,559 test_hardcover.py[line:22] INFO ======test_newalbum=====
+2019-07-02 16:39:29,311 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:39:30,971 hardcover.py[line:75] INFO ===最新上架+加入心愿单===
+2019-07-02 16:39:35,287 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:39:40,747 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:39:40,749 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:40:00,144 test_hardcover.py[line:10] INFO ======test_todayrecomend=====
+2019-07-02 16:40:00,144 hardcover.py[line:33] INFO ===今日特推===
+2019-07-02 16:40:05,892 hardcover.py[line:40] ERROR 精装数据加载失败！
+2019-07-02 16:40:05,892 common_fun.py[line:144] INFO get 精装数据加载失败！ screenshot
+2019-07-02 16:40:07,214 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:40:12,637 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:40:12,641 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:40:31,714 test_icon.py[line:11] INFO ======test_personal=====
+2019-07-02 16:40:33,579 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:40:39,027 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:40:39,029 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:40:58,259 test_message.py[line:10] INFO ======test_delete_message=====
+2019-07-02 16:40:58,804 message.py[line:19] INFO ===清空与我相关===
+2019-07-02 16:40:59,350 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:41:04,856 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:41:04,858 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:41:25,335 recommended.py[line:25] INFO ===播放儿童故事===
+2019-07-02 16:41:28,054 recommended.py[line:30] ERROR 儿童故事数据加载失败！
+2019-07-02 16:41:28,054 common_fun.py[line:144] INFO get 儿童故事数据加载失败！ screenshot
+2019-07-02 16:41:29,407 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:41:34,851 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:41:34,853 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:41:54,845 recommended.py[line:38] INFO ===推荐界面检查===
+2019-07-02 16:41:54,845 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:41:57,086 common_fun.py[line:83] INFO swipeUp
+2019-07-02 16:42:02,832 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:42:08,308 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:42:08,310 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:42:29,626 recommended.py[line:54] INFO ===关注主播===
+2019-07-02 16:42:30,018 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 16:42:30,843 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:42:36,274 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:42:36,277 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:42:58,263 test_recording.py[line:11] INFO ======test_recording=====
+2019-07-02 16:43:00,330 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:43:05,765 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:43:05,767 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:43:26,520 test_recording.py[line:21] INFO ======test_upload_voice=====
+2019-07-02 16:43:28,422 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:43:33,844 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:43:33,848 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:43:54,035 test_search.py[line:10] INFO ======test_search=====
+2019-07-02 16:43:54,035 search.py[line:17] INFO ===搜索====
+2019-07-02 16:44:00,685 search.py[line:23] INFO ====check search_voice======
+2019-07-02 16:44:02,970 search.py[line:31] INFO search_voice success!
+2019-07-02 16:44:03,841 search.py[line:37] INFO ====check search_user======
+2019-07-02 16:44:05,923 search.py[line:45] INFO search_user success!
+2019-07-02 16:44:06,264 search.py[line:51] INFO ====check search_album======
+2019-07-02 16:44:07,277 search.py[line:59] INFO search_album success!
+2019-07-02 16:44:07,277 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:44:12,693 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:44:12,696 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:44:32,455 test_set.py[line:10] INFO ======test_sets=====
+2019-07-02 16:44:39,750 set.py[line:25] INFO ===检查关于一说宝宝===
+2019-07-02 16:44:42,943 set.py[line:33] INFO 官方信息正常
+2019-07-02 16:44:46,137 set.py[line:36] INFO ===检查错误验证码能否使用===
+2019-07-02 16:44:46,197 set.py[line:40] ERROR 长连接断开！
+2019-07-02 16:44:46,197 common_fun.py[line:144] INFO get 长连接断开！ screenshot
+2019-07-02 16:44:47,469 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:44:52,918 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:44:52,920 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:44:55,772 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:45:15,016 test_subscribe.py[line:10] INFO ======test_subscribes_play=====
+2019-07-02 16:45:15,016 subscribe.py[line:78] INFO ===播放大家都在听中专辑声音====
+2019-07-02 16:45:15,027 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:45:20,099 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:45:20,102 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:45:43,089 test_subscribe.py[line:19] INFO ======test_subscribe=====
+2019-07-02 16:45:43,089 subscribe.py[line:23] INFO ===订阅大家都在听====
+2019-07-02 16:45:43,098 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:45:48,106 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:45:48,108 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:46:06,469 test_subscribe.py[line:28] INFO ======test_subscribe_play=====
+2019-07-02 16:46:06,469 subscribe.py[line:52] INFO ===播放我的订阅中专辑声音====
+2019-07-02 16:46:08,013 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:46:13,492 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:46:13,494 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:46:33,543 player.py[line:36] INFO ===转发声音===
+2019-07-02 16:46:36,459 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 16:46:41,893 myunit.py[line:8] INFO =====setUp====
+2019-07-02 16:46:41,895 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:47:07,775 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:48:04,032 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:50:23,517 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:51:16,097 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:51:44,530 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:53:17,920 desired_caps.py[line:33] INFO start app...
+2019-07-02 16:53:39,285 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:04:32,722 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:05:06,352 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:07,382 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:08,421 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:09,464 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:10,537 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:11,614 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:12,679 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:13,719 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:14,767 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:15,826 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:05:16,864 player.py[line:77] INFO 收藏声音成功！
+2019-07-02 17:06:42,354 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:08:11,577 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:10:57,219 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:11:26,400 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:27,492 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:28,544 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:29,627 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:30,698 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:31,781 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:32,847 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:33,898 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:34,958 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:36,008 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:11:37,052 player.py[line:77] INFO 收藏声音成功！
+2019-07-02 17:12:13,737 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:19:33,894 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:27:39,658 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:28:20,849 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:29:00,579 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:30:45,778 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:32:39,797 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:33:12,311 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:13,525 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:14,744 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:15,802 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:16,847 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:17,988 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:19,133 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:20,201 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:21,253 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:22,359 common_fun.py[line:92] INFO swipeUp
+2019-07-02 17:33:23,428 player.py[line:77] INFO 收藏声音成功！
+2019-07-02 17:47:12,193 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:47:45,660 player.py[line:74] ERROR 收藏声音失败！
+2019-07-02 17:47:45,660 common_fun.py[line:144] INFO get 收藏声音失败！ screenshot
+2019-07-02 17:51:17,595 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:51:50,630 player.py[line:75] ERROR 收藏声音失败！
+2019-07-02 17:51:50,631 common_fun.py[line:144] INFO get 收藏声音失败！ screenshot
+2019-07-02 17:53:43,896 desired_caps.py[line:33] INFO start app...
+2019-07-02 17:54:17,603 player.py[line:75] ERROR 收藏声音失败！
+2019-07-02 17:54:17,603 common_fun.py[line:144] INFO get 收藏声音失败！ screenshot
+2019-07-02 19:00:03,964 run.py[line:78] INFO start run test case...
+2019-07-02 19:00:03,964 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 19:00:03,968 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 19:00:23,583 test_1_login.py[line:13] INFO ======test_login_wechat=====
+2019-07-02 19:00:23,583 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 19:00:25,398 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 19:00:34,264 common_fun.py[line:30] INFO ==一说宝宝引导==
+2019-07-02 19:00:39,448 common_fun.py[line:148] INFO ====检查优惠券====
+2019-07-02 19:00:47,009 wechatLogin.py[line:26] INFO ============login_action==============
+2019-07-02 19:00:48,027 wechatLogin.py[line:28] INFO login finished!
+2019-07-02 19:00:48,027 wechatLogin.py[line:31] INFO ====check_loginStatus======
+2019-07-02 19:00:56,302 wechatLogin.py[line:36] ERROR login Fail!
+2019-07-02 19:00:56,302 common_fun.py[line:144] INFO get login fail screenshot
+2019-07-02 19:00:57,518 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 19:01:03,066 myunit_l.py[line:8] INFO =====setUp====
+2019-07-02 19:01:03,068 desired_caps_l.py[line:33] INFO start app...
+2019-07-02 19:01:23,489 test_1_login.py[line:21] INFO ======test_login_13928413356=====
+2019-07-02 19:01:23,489 common_fun.py[line:170] INFO =====get_csv_data======
+2019-07-02 19:01:23,507 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 19:01:25,252 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 19:01:30,938 loginView.py[line:15] INFO ===引导页登录====
+2019-07-02 19:01:31,664 loginView.py[line:18] INFO ============login_action==============
+2019-07-02 19:01:31,665 loginView.py[line:19] INFO username is:15818695630
+2019-07-02 19:01:38,489 loginView.py[line:22] INFO password is:123456
+2019-07-02 19:01:44,944 loginView.py[line:25] INFO click loginBtn
+2019-07-02 19:01:45,770 loginView.py[line:27] INFO login finished!
+2019-07-02 19:01:45,770 loginView.py[line:30] INFO ====check_loginStatus======
+2019-07-02 19:01:52,570 loginView.py[line:38] INFO login success!
+2019-07-02 19:01:52,571 myunit_l.py[line:12] INFO ====tearDown====
+2019-07-02 19:01:57,977 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:01:57,980 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:02:18,848 test_2_radio.py[line:9] INFO ======test_radio=====
+2019-07-02 19:02:18,848 radioStation.py[line:14] INFO ===动态-电台====
+2019-07-02 19:02:22,074 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 19:02:22,900 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:02:26,012 radioStation.py[line:33] INFO ====check_radio_play======
+2019-07-02 19:02:27,354 radioStation.py[line:35] INFO 点播: 小仙女891
+2019-07-02 19:02:44,207 radioStation.py[line:44] INFO 播放: 小仙女746
+2019-07-02 19:02:44,207 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:02:49,639 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:02:49,643 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:03:09,954 test_friend.py[line:10] INFO ======test_friends=====
+2019-07-02 19:03:10,422 friend.py[line:42] INFO ===搜索已添加好友===
+2019-07-02 19:03:19,995 friend.py[line:53] INFO 搜索好友成功
+2019-07-02 19:03:19,995 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:03:25,447 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:03:25,451 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:03:45,012 test_friend.py[line:16] INFO ======test_newfriend=====
+2019-07-02 19:03:45,458 friend.py[line:98] INFO ===新的朋友===
+2019-07-02 19:03:53,660 friend.py[line:110] INFO 跳转通讯录好友界面
+2019-07-02 19:04:07,745 friend.py[line:128] INFO 搜索用户成功
+2019-07-02 19:04:07,746 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:04:13,135 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:04:13,138 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:04:32,926 test_friend.py[line:22] INFO ======test_thirdfriend=====
+2019-07-02 19:04:33,321 friend.py[line:62] INFO ===新的朋友-第三方===
+2019-07-02 19:04:46,833 friend.py[line:69] ERROR 新浪微博好友页面加载失败！
+2019-07-02 19:04:46,833 common_fun.py[line:144] INFO get 新浪微博好友页面加载失败！ screenshot
+2019-07-02 19:04:48,036 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:04:53,487 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:04:53,489 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:05:14,349 test_group.py[line:10] INFO ======test_group=====
+2019-07-02 19:05:14,349 group.py[line:46] INFO ===申请加入群组====
+2019-07-02 19:05:15,035 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 19:05:17,115 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 19:05:28,680 group.py[line:55] INFO ====check_join_group======
+2019-07-02 19:05:28,910 group.py[line:63] INFO join_group success!
+2019-07-02 19:05:28,910 group.py[line:67] INFO ===创建群组====
+2019-07-02 19:06:10,494 group.py[line:95] INFO ====check_create_group======
+2019-07-02 19:06:12,566 group.py[line:103] INFO create_group success!
+2019-07-02 19:06:12,566 group.py[line:107] INFO ===发送群组消息====
+2019-07-02 19:06:27,879 group.py[line:120] INFO ====check_send_message======
+2019-07-02 19:06:31,897 group.py[line:128] INFO send_message success!
+2019-07-02 19:06:31,898 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:06:37,374 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:06:37,376 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:06:57,459 test_hardcover.py[line:28] INFO ======test_buyalbums=====
+2019-07-02 19:06:57,766 hardcover.py[line:99] INFO ===我的已购专辑===
+2019-07-02 19:07:02,646 hardcover.py[line:109] INFO 已购专辑加载成功！
+2019-07-02 19:07:02,647 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:07:08,057 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:07:08,060 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:07:27,582 test_hardcover.py[line:16] INFO ======test_heavyfine=====
+2019-07-02 19:07:28,356 hardcover.py[line:56] INFO ===重磅精品+声音===
+2019-07-02 19:07:28,356 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:07:34,140 hardcover.py[line:68] INFO 重磅精品正确
+2019-07-02 19:07:34,140 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:07:39,577 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:07:39,579 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:08:00,106 test_hardcover.py[line:22] INFO ======test_newalbum=====
+2019-07-02 19:08:00,866 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:08:02,534 hardcover.py[line:75] INFO ===最新上架+加入心愿单===
+2019-07-02 19:08:11,399 hardcover.py[line:90] INFO 加入心愿单成功
+2019-07-02 19:08:11,400 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:08:16,813 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:08:16,817 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:08:38,281 test_hardcover.py[line:10] INFO ======test_todayrecomend=====
+2019-07-02 19:08:38,281 hardcover.py[line:33] INFO ===今日特推===
+2019-07-02 19:08:42,326 hardcover.py[line:46] INFO 今日特推专辑正确
+2019-07-02 19:08:42,326 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:08:47,722 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:08:47,725 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:09:07,830 test_icon.py[line:11] INFO ======test_personal=====
+2019-07-02 19:09:25,332 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:09:30,653 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:09:30,655 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:09:51,181 test_message.py[line:10] INFO ======test_delete_message=====
+2019-07-02 19:09:51,620 message.py[line:19] INFO ===清空与我相关===
+2019-07-02 19:09:57,012 message.py[line:24] INFO ===清空通知===
+2019-07-02 19:10:02,077 message.py[line:29] INFO ===清空群组通知===
+2019-07-02 19:10:06,827 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:10:12,292 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:10:12,294 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:10:32,152 recommended.py[line:25] INFO ===播放儿童故事===
+2019-07-02 19:10:35,736 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:10:41,134 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:10:41,136 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:11:01,555 recommended.py[line:38] INFO ===推荐界面检查===
+2019-07-02 19:11:01,556 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:11:03,879 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:11:11,121 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:11:16,543 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:11:16,546 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:11:36,976 recommended.py[line:54] INFO ===关注主播===
+2019-07-02 19:11:37,370 common_fun.py[line:59] INFO swipeLeft
+2019-07-02 19:11:42,967 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:11:48,444 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:11:48,446 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:12:08,384 test_recording.py[line:11] INFO ======test_recording=====
+2019-07-02 19:13:27,938 recording.py[line:68] INFO 录音发布成功！
+2019-07-02 19:13:27,938 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:13:33,296 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:13:33,299 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:13:53,058 test_recording.py[line:21] INFO ======test_upload_voice=====
+2019-07-02 19:14:49,722 recording.py[line:95] INFO 录音发布成功！
+2019-07-02 19:14:49,723 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:14:55,088 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:14:55,091 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:15:15,804 test_search.py[line:10] INFO ======test_search=====
+2019-07-02 19:15:15,804 search.py[line:17] INFO ===搜索====
+2019-07-02 19:15:22,788 search.py[line:23] INFO ====check search_voice======
+2019-07-02 19:15:25,855 search.py[line:31] INFO search_voice success!
+2019-07-02 19:15:43,421 search.py[line:37] INFO ====check search_user======
+2019-07-02 19:15:45,513 search.py[line:45] INFO search_user success!
+2019-07-02 19:15:45,852 search.py[line:51] INFO ====check search_album======
+2019-07-02 19:15:47,133 search.py[line:59] INFO search_album success!
+2019-07-02 19:15:47,133 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:15:52,547 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:15:52,550 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:16:12,187 test_services.py[line:17] INFO ======test意见反馈=====
+2019-07-02 19:16:33,553 services.py[line:47] INFO 意见提交成功！
+2019-07-02 19:16:33,553 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:16:38,976 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:16:38,978 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:16:58,530 test_services.py[line:11] INFO ======test免流量收听=====
+2019-07-02 19:17:06,079 services.py[line:31] INFO 免流量加载成功！
+2019-07-02 19:17:06,079 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:17:11,534 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:17:11,535 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:17:32,291 test_set.py[line:10] INFO ======test_sets=====
+2019-07-02 19:17:39,812 set.py[line:25] INFO ===检查关于一说宝宝===
+2019-07-02 19:17:43,000 set.py[line:33] INFO 官方信息正常
+2019-07-02 19:17:46,179 set.py[line:36] INFO ===检查错误验证码能否使用===
+2019-07-02 19:18:00,534 set.py[line:51] INFO 验证码正常
+2019-07-02 19:18:00,534 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:18:05,969 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:18:05,971 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:18:25,689 test_subscribe.py[line:10] INFO ======test_subscribes_play=====
+2019-07-02 19:18:25,689 subscribe.py[line:78] INFO ===播放大家都在听中专辑声音====
+2019-07-02 19:18:26,339 common_fun.py[line:40] INFO ===电台引导===
+2019-07-02 19:18:28,246 common_fun.py[line:44] INFO ==没有电台引导==
+2019-07-02 19:18:30,807 common_fun.py[line:92] INFO swipeUp
+2019-07-02 19:18:32,362 common_fun.py[line:92] INFO swipeUp
+2019-07-02 19:18:33,872 common_fun.py[line:92] INFO swipeUp
+2019-07-02 19:18:35,397 common_fun.py[line:92] INFO swipeUp
+2019-07-02 19:18:36,943 common_fun.py[line:92] INFO swipeUp
+2019-07-02 19:18:41,307 subscribe.py[line:91] INFO 大家都在听专辑数据加载成功！
+2019-07-02 19:18:41,307 subscribe.py[line:60] INFO ===检查播放专辑声音====
+2019-07-02 19:18:42,811 subscribe.py[line:62] INFO 点播: 创业，改变了一个国家的命运
+2019-07-02 19:18:57,551 subscribe.py[line:66] INFO 播放: 创业,改变了一个国家的命运
+2019-07-02 19:18:57,551 subscribe.py[line:70] INFO subscribe_play success!
+2019-07-02 19:18:57,552 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:19:02,960 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:19:02,963 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:19:24,797 test_subscribe.py[line:19] INFO ======test_subscribe=====
+2019-07-02 19:19:24,797 subscribe.py[line:23] INFO ===订阅大家都在听====
+2019-07-02 19:19:28,632 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:19:30,686 common_fun.py[line:83] INFO swipeUp
+2019-07-02 19:19:32,605 subscribe.py[line:31] INFO 专辑：野马创社
+2019-07-02 19:19:41,540 subscribe.py[line:37] ERROR subscribe fail!
+2019-07-02 19:19:41,540 common_fun.py[line:144] INFO get subscribe fail! screenshot
+2019-07-02 19:19:43,038 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:19:48,493 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:19:48,495 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:20:09,667 test_subscribe.py[line:28] INFO ======test_subscribe_play=====
+2019-07-02 19:20:09,667 subscribe.py[line:52] INFO ===播放我的订阅中专辑声音====
+2019-07-02 19:20:12,834 subscribe.py[line:60] INFO ===检查播放专辑声音====
+2019-07-02 19:20:14,136 subscribe.py[line:62] INFO 点播: 古风耽美广播剧 - 《为君狂》下期ED《红颜旧》-卡修
+2019-07-02 19:20:28,468 subscribe.py[line:66] INFO 播放: 古风耽美广播剧 - 《为君狂》下期ED《红颜旧》-卡修
+2019-07-02 19:20:28,468 subscribe.py[line:70] INFO subscribe_play success!
+2019-07-02 19:20:28,469 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:20:33,865 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:20:33,869 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:20:54,094 player.py[line:41] INFO ===转发声音===
+2019-07-02 19:21:08,327 player.py[line:46] INFO 转发成功
+2019-07-02 19:21:08,327 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:21:13,743 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:21:13,746 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:21:33,780 test_z_player.py[line:26] INFO ===举报、下载、分享
+2019-07-02 19:21:50,570 player.py[line:89] INFO 举报成功
+2019-07-02 19:21:50,570 player.py[line:91] INFO ===点击下载===
+2019-07-02 19:21:56,946 player.py[line:98] ERROR Share voice fail!
+2019-07-02 19:21:56,946 common_fun.py[line:144] INFO get Share voice fail! screenshot
+2019-07-02 19:22:00,189 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:22:05,664 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:22:05,667 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:22:40,754 player.py[line:75] ERROR 收藏声音失败！
+2019-07-02 19:22:40,755 common_fun.py[line:144] INFO get 收藏声音失败！ screenshot
+2019-07-02 19:22:41,865 myunit.py[line:12] INFO ====tearDown====
+2019-07-02 19:22:47,320 myunit.py[line:8] INFO =====setUp====
+2019-07-02 19:22:47,322 desired_caps.py[line:33] INFO start app...
+2019-07-02 19:23:23,320 player.py[line:121] INFO 评论内容: 赞！[嘻嘻]
+2019-07-02 19:23:23,320 player.py[line:124] INFO 评论成功!
+2019-07-02 19:23:23,320 myunit.py[line:12] INFO ====tearDown====
+2019-07-03 10:00:03,650 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:00:41,900 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:43,180 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:44,389 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:45,594 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:46,706 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:47,979 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:49,036 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:50,182 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:51,274 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:52,475 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:00:53,623 player.py[line:79] INFO 收藏声音成功！
+2019-07-03 10:01:46,116 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:02:20,535 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:21,874 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:23,123 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:24,272 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:25,392 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:26,450 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:27,518 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:28,628 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:29,739 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:30,827 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:02:31,917 player.py[line:79] INFO 收藏声音成功！
+2019-07-03 10:02:50,701 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:03:24,489 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:25,800 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:27,100 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:28,274 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:29,353 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:30,444 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:31,500 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:32,665 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:33,738 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:34,835 common_fun.py[line:92] INFO swipeUp
+2019-07-03 10:03:35,913 player.py[line:75] ERROR 收藏声音失败！
+2019-07-03 10:03:35,914 common_fun.py[line:149] INFO get 收藏声音失败！ screenshot
+2019-07-03 10:14:21,346 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:15:11,207 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:16:11,420 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:17:56,444 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:19:33,656 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:21:39,490 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:22:50,021 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:23:24,969 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:25:21,779 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:28:48,716 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:32:05,371 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:32:39,549 player.py[line:77] ERROR 收藏声音失败！
+2019-07-03 10:32:39,549 common_fun.py[line:157] INFO get 收藏声音失败！ screenshot
+2019-07-03 10:34:15,732 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:34:50,053 player.py[line:78] ERROR 收藏声音失败！
+2019-07-03 10:34:50,054 common_fun.py[line:157] INFO get 收藏声音失败！ screenshot
+2019-07-03 10:37:10,790 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:37:48,102 player.py[line:79] ERROR 收藏声音失败！
+2019-07-03 10:37:48,102 common_fun.py[line:157] INFO get 收藏声音失败！ screenshot
+2019-07-03 10:38:06,327 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:38:41,645 player.py[line:79] ERROR 收藏声音失败！
+2019-07-03 10:38:41,646 common_fun.py[line:157] INFO get 收藏声音失败！ screenshot
+2019-07-03 10:39:55,119 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:40:30,360 player.py[line:84] INFO 收藏声音成功！
+2019-07-03 10:41:58,264 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:42:32,303 player.py[line:84] INFO 收藏声音成功！
+2019-07-03 10:42:57,745 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:43:34,640 player.py[line:84] INFO 收藏声音成功！
+2019-07-03 10:44:21,255 desired_caps.py[line:33] INFO start app...
+2019-07-03 10:44:58,762 player.py[line:80] INFO 收藏声音成功！
+2019-07-03 13:28:40,615 search.py[line:17] INFO ===搜索====
+2019-07-03 13:28:43,406 search.py[line:17] INFO ===搜索====
+2019-07-03 13:28:54,730 search.py[line:23] INFO ====check search_voice======
+2019-07-03 13:28:56,799 search.py[line:31] INFO search_voice success!
+2019-07-03 13:28:58,034 search.py[line:23] INFO ====check search_voice======
+2019-07-03 13:29:00,558 search.py[line:31] INFO search_voice success!
+2019-07-03 13:29:01,511 search.py[line:37] INFO ====check search_user======
+2019-07-03 13:29:03,447 search.py[line:45] INFO search_user success!
+2019-07-03 13:29:03,703 search.py[line:51] INFO ====check search_album======
+2019-07-03 13:29:06,475 search.py[line:59] INFO search_album success!
+2019-07-03 13:29:14,435 search.py[line:37] INFO ====check search_user======
+2019-07-03 13:29:16,158 search.py[line:45] INFO search_user success!
+2019-07-03 13:29:16,493 search.py[line:51] INFO ====check search_album======
+2019-07-03 13:29:17,840 search.py[line:59] INFO search_album success!
+2019-07-03 13:49:26,944 runs.py[line:68] INFO start run test case...
+2019-07-03 13:49:26,944 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 13:49:44,866 message.py[line:19] INFO ===清空与我相关===
+2019-07-03 13:49:49,387 message.py[line:19] INFO ===清空与我相关===
+2019-07-03 13:49:50,193 message.py[line:24] INFO ===清空通知===
+2019-07-03 13:49:54,831 message.py[line:24] INFO ===清空通知===
+2019-07-03 13:49:55,412 message.py[line:29] INFO ===清空群组通知===
+2019-07-03 13:49:59,969 message.py[line:29] INFO ===清空群组通知===
+2019-07-03 13:50:04,712 test_search.py[line:10] INFO ======test_multi_search=====
+2019-07-03 13:50:19,348 search.py[line:17] INFO ===搜索====
+2019-07-03 13:50:20,720 search.py[line:17] INFO ===搜索====
+2019-07-03 13:50:33,628 search.py[line:23] INFO ====check search_voice======
+2019-07-03 13:50:35,710 search.py[line:31] INFO search_voice success!
+2019-07-03 13:50:35,919 search.py[line:23] INFO ====check search_voice======
+2019-07-03 13:50:38,130 search.py[line:31] INFO search_voice success!
+2019-07-03 13:50:39,082 search.py[line:37] INFO ====check search_user======
+2019-07-03 13:50:41,238 search.py[line:45] INFO search_user success!
+2019-07-03 13:50:41,498 search.py[line:51] INFO ====check search_album======
+2019-07-03 13:50:43,911 search.py[line:59] INFO search_album success!
+2019-07-03 13:50:53,406 search.py[line:37] INFO ====check search_user======
+2019-07-03 13:50:55,039 search.py[line:45] INFO search_user success!
+2019-07-03 13:50:55,332 search.py[line:51] INFO ====check search_album======
+2019-07-03 13:50:56,631 search.py[line:59] INFO search_album success!
+2019-07-03 13:59:12,244 runs.py[line:68] INFO start run test case...
+2019-07-03 13:59:12,245 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 13:59:17,744 test_search.py[line:10] INFO ======test_multi_search=====
+2019-07-03 14:00:01,410 runs.py[line:68] INFO start run test case...
+2019-07-03 14:00:01,410 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 14:00:06,826 test_search.py[line:10] INFO ======test_multi_search=====
+2019-07-03 14:00:48,340 runs.py[line:69] INFO start run test case...
+2019-07-03 14:00:48,340 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 14:00:53,747 test_search.py[line:10] INFO ======test_multi_search=====
+2019-07-03 14:01:07,165 runs.py[line:69] INFO start run test case...
+2019-07-03 14:01:07,165 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 14:01:43,526 runs.py[line:69] INFO start run test case...
+2019-07-03 14:01:43,527 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 14:02:01,524 message.py[line:19] INFO ===清空与我相关===
+2019-07-03 14:02:06,790 message.py[line:24] INFO ===清空通知===
+2019-07-03 14:02:08,011 message.py[line:19] INFO ===清空与我相关===
+2019-07-03 14:02:11,907 message.py[line:29] INFO ===清空群组通知===
+2019-07-03 14:02:13,710 message.py[line:24] INFO ===清空通知===
+2019-07-03 14:02:18,800 message.py[line:29] INFO ===清空群组通知===
+2019-07-03 14:02:23,568 test_search.py[line:10] INFO ======test_multi_search=====
+2019-07-03 14:02:38,246 search.py[line:17] INFO ===搜索====
+2019-07-03 14:02:39,584 search.py[line:17] INFO ===搜索====
+2019-07-03 14:02:51,723 search.py[line:23] INFO ====check search_voice======
+2019-07-03 14:02:53,791 search.py[line:31] INFO search_voice success!
+2019-07-03 14:02:54,160 search.py[line:23] INFO ====check search_voice======
+2019-07-03 14:02:56,456 search.py[line:31] INFO search_voice success!
+2019-07-03 14:02:57,445 search.py[line:37] INFO ====check search_user======
+2019-07-03 14:02:59,470 search.py[line:45] INFO search_user success!
+2019-07-03 14:02:59,702 search.py[line:51] INFO ====check search_album======
+2019-07-03 14:03:02,480 search.py[line:59] INFO search_album success!
+2019-07-03 14:03:11,347 search.py[line:37] INFO ====check search_user======
+2019-07-03 14:03:13,125 search.py[line:45] INFO search_user success!
+2019-07-03 14:03:13,400 search.py[line:51] INFO ====check search_album======
+2019-07-03 14:03:14,847 search.py[line:59] INFO search_album success!
+2019-07-03 14:05:18,980 runs.py[line:69] INFO start run test case...
+2019-07-03 14:05:18,981 test_message.py[line:10] INFO ======test_multi_message=====
+2019-07-03 14:05:37,703 message.py[line:19] INFO ===清空与我相关===
+2019-07-03 14:05:41,066 message.py[line:19] INFO ===清空与我相关===
+2019-07-03 14:05:43,044 message.py[line:24] INFO ===清空通知===
+2019-07-03 14:05:46,522 message.py[line:24] INFO ===清空通知===
+2019-07-03 14:05:48,120 message.py[line:29] INFO ===清空群组通知===
+2019-07-03 14:05:51,585 message.py[line:29] INFO ===清空群组通知===
+2019-07-03 14:05:56,287 test_search.py[line:10] INFO ======test_multi_search=====
+2019-07-03 14:06:10,552 search.py[line:17] INFO ===搜索====
+2019-07-03 14:06:12,762 search.py[line:17] INFO ===搜索====
+2019-07-03 14:06:24,526 search.py[line:23] INFO ====check search_voice======
+2019-07-03 14:06:26,277 search.py[line:23] INFO ====check search_voice======
+2019-07-03 14:06:26,737 search.py[line:31] INFO search_voice success!
+2019-07-03 14:06:28,631 search.py[line:31] INFO search_voice success!
+2019-07-03 14:06:29,506 search.py[line:37] INFO ====check search_user======
+2019-07-03 14:06:31,494 search.py[line:45] INFO search_user success!
+2019-07-03 14:06:31,744 search.py[line:51] INFO ====check search_album======
+2019-07-03 14:06:33,984 search.py[line:59] INFO search_album success!
+2019-07-03 14:06:44,360 search.py[line:37] INFO ====check search_user======
+2019-07-03 14:06:46,029 search.py[line:45] INFO search_user success!
+2019-07-03 14:06:46,322 search.py[line:51] INFO ====check search_album======
+2019-07-03 14:06:47,719 search.py[line:59] INFO search_album success!
