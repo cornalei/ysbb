@@ -1,0 +1,24 @@
+platformName: Android
+##模拟器
+#platformVersion: 5.1.1
+#deviceName: 127.0.0.1:62025
+
+#荣耀真机
+platformVersion: 9
+udid: VBJ4C18517001054
+deviceName: hornor
+
+#华为真机
+#platformVersion: 8.0.0
+#udid: 8GP7N18504003670
+#deviceName: nova
+
+appname: 1shuobb_v1.4.10.apk
+noReset: True
+unicodeKeyboard: True
+resetKeyboard: True
+
+appPackage: com.clickcoo.yishuobaobao
+appActivity: com.yishuobaobao.activities.LogoActivity
+ip: 127.0.0.1
+port: 4723
