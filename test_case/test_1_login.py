@@ -8,7 +8,7 @@ import logging
 class TestLogin(StartEnd):
     csv_file='../data/account.csv'
 
-    # @unittest.skip('test_login_wechat')
+    @unittest.skip('test_login_wechat')
     def test_login_wechat(self):
         logging.info('======test_login_wechat=====')
         w = WechatLogin(self.driver)
@@ -23,7 +23,15 @@ class TestLogin(StartEnd):
         data=l.get_csv_data(self.csv_file,1)
 
         l.login_action(data[0],data[1])
-        self.assertTrue(l.check_loginStatus())
+        # self.assertTrue(l.check_loginStatus())
+        i=0
+        while i<=3:
+            i=i+1
+            if self.assertTrue(l.check_loginStatus()) is AssertionError:
+                l.login_action(data[0], data[1])
+            else:
+                break
+
 
     # @unittest.skip('skip test_login_1600')
     # def test_login_1600(self):
