@@ -52,7 +52,7 @@ def appium_start_sync():
     for appium in appium_process:
         appium.join()
 
-    time.sleep(3)
+    time.sleep(5)
 
 def run_case():
     #加载测试用例
