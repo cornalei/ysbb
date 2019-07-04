@@ -1,5 +1,6 @@
 import unittest,subprocess,os,socket
-from  BSTestRunner import BSTestRunner
+# from  BSTestRunner import BSTestRunner
+from HTMLTestRunner import HTMLTestRunner
 import time,logging
 from time import ctime
 
@@ -65,8 +66,8 @@ def appium_start(host, port):
 
 def run_case():
     #加载测试用例
-    discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py') #匹配test开头的用例
-    # discover=unittest.defaultTestLoader.discover(test_dir,pattern='test_services.py')
+    # discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py') #匹配test开头的用例
+    discover=unittest.defaultTestLoader.discover(test_dir,pattern='test_friend.py')
 
     #定义报告的文件格式
     now=time.strftime('%Y-%m-%d %H_%M_%S')
@@ -74,7 +75,7 @@ def run_case():
 
     #运行用例并生成测试报告
     with open(report_name,'wb') as f:
-        runner=BSTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告')
+        runner=HTMLTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告')
         logging.info('start run test case...')
         runner.run(discover)
 
@@ -93,7 +94,6 @@ def start_devices_action(host,port):
         print('finis！')
     else:
         run_case()
-
 
 
 if __name__ == '__main__':
