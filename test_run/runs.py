@@ -33,6 +33,7 @@ def start_appium_action(host,port):
         return True
     else:
         appium_start(host, port)
+        time.sleep(5)
         return False
 
 def appium_start_sync():
@@ -51,8 +52,6 @@ def appium_start_sync():
         appium.start()
     for appium in appium_process:
         appium.join()
-
-    time.sleep(5)
 
 def run_case():
     #加载测试用例

@@ -1,7 +1,7 @@
 #播放器
 from common.myunit import StartEnd
 from businessView.player import Player
-import unittest,logging,random
+import unittest,logging
 
 class TestPlayer(StartEnd):
 
@@ -26,6 +26,7 @@ class TestPlayer(StartEnd):
         logging.info('===举报、下载、分享')
         p = Player(self.driver)
         self.assertTrue(p.play_check())
+
 
 
 

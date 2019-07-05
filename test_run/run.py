@@ -1,5 +1,4 @@
 import unittest,subprocess,os,socket
-# from  BSTestRunner import BSTestRunner
 from HTMLTestRunner import HTMLTestRunner
 import time,logging
 from time import ctime
@@ -66,8 +65,8 @@ def appium_start(host, port):
 
 def run_case():
     #加载测试用例
-    # discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py') #匹配test开头的用例
-    discover=unittest.defaultTestLoader.discover(test_dir,pattern='test_z_player.py')
+    discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py') #匹配test开头的用例
+    # discover=unittest.defaultTestLoader.discover(test_dir,pattern='test_z_player.py')
 
     #定义报告的文件格式
     now=time.strftime('%Y-%m-%d %H_%M_%S')
