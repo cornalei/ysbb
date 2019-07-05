@@ -10,5 +10,4 @@ class StartEnd(unittest.TestCase):
 
     def tearDown(self):
         logging.info('====tearDown====')
-        sleep(5)
         self.driver.close_app()
