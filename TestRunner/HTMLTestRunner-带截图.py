@@ -57,6 +57,9 @@ __version__ = "0.8.2.1"
 
 """
 Change History
+* Add Retry on failed
+Version 0.8.3
+* Prevent crash on class or module-level exceptions (Leilani).
 Version 0.8.2.1 -Findyou
 * 支持中文，汉化
 * 调整样式，美化（需要连入网络，使用的百度的Bootstrap.js）
@@ -85,7 +88,13 @@ import datetime
 from io import StringIO
 import unittest
 from xml.sax import saxutils
+import copy
 
+PY3K = (sys.version_info[0] > 2)
+if PY3K:
+    import io as StringIO
+else:
+    import StringIO
 
 # ------------------------------------------------------------------------
 # The redirectors below are used to capture output during testing. Output
@@ -324,7 +333,7 @@ table       { font-size: 100%; }
     # 汉化,加美化效果 --Findyou
     REPORT_TMPL = """
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ %(passrate)s }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>通过率{ %(passrate)s }</a>
 <a class="btn btn-warning" href='javascript:showCase(4)'>错误{ %(error)s }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ %(fail)s }</a>
 <a class="btn btn-success" href='javascript:showCase(2)'>通过{ %(Pass)s }</a>
@@ -436,13 +445,14 @@ class _TestResult(TestResult):
     # note: _TestResult is a pure representation of results.
     # It lacks the output and reporting ability compares to unittest._TextTestResult.
 
-    def __init__(self, verbosity=1):
+    def __init__(self, verbosity=1, retry=0,save_last_try=False):
         TestResult.__init__(self)
         self.stdout0 = None
         self.stderr0 = None
         self.success_count = 0
         self.failure_count = 0
         self.error_count = 0
+        self.skip_count = 0
         self.verbosity = verbosity
 
         # result is a list of result in 4 tuple
@@ -455,12 +465,20 @@ class _TestResult(TestResult):
         self.result = []
         #增加一个测试通过率 --Findyou
         self.passrate = float(0)
+        self.retry = retry
+        self.trys = 0
+        self.status = 0
+
+        self.save_last_try = save_last_try
+        self.outputBuffer = StringIO.StringIO()
 
 
     def startTest(self, test):
         TestResult.startTest(self, test)
         # just one buffer for both stdout and stderr
-        self.outputBuffer = StringIO()
+        # self.outputBuffer = StringIO()
+        self.outputBuffer.seek(0)
+        self.outputBuffer.truncate()
         stdout_redirector.fp = self.outputBuffer
         stderr_redirector.fp = self.outputBuffer
         self.stdout0 = sys.stdout
@@ -486,11 +504,38 @@ class _TestResult(TestResult):
         # Usually one of addSuccess, addError or addFailure would have been called.
         # But there are some path in unittest that would bypass this.
         # We must disconnect stdout in stopTest(), which is guaranteed to be called.
+        if self.retry and self.retry >= 1:
+            if self.status == 1:
+                self.trys += 1
+                if self.trys <= self.retry:
+                    if self.save_last_try:
+                        t = self.result.pop(-1)
+                        if t[0] == 1:
+                            self.failure_count -= 1
+                        else:
+                            self.error_count -= 1
+                    test = copy.copy(test)
+                    sys.stderr.write("Retesting... ")
+                    sys.stderr.write(str(test))
+                    sys.stderr.write('..%d \n' % self.trys)
+                    doc = getattr(test, '_testMethodDoc', u"") or u''
+                    if doc.find('_retry') != -1:
+                        doc = doc[:doc.find('_retry')]
+                    desc = "%s_retry:%d" % (doc, self.trys)
+                    if not PY3K:
+                        if isinstance(desc, str):
+                            desc = desc.decode("utf-8")
+                    test._testMethodDoc = desc
+                    test(self)
+                else:
+                    self.status = 0
+                    self.trys = 0
         self.complete_output()
 
 
     def addSuccess(self, test):
         self.success_count += 1
+        self.status = 0
         TestResult.addSuccess(self, test)
         output = self.complete_output()
         self.result.append((0, test, output, ''))
@@ -503,6 +548,7 @@ class _TestResult(TestResult):
 
     def addError(self, test, err):
         self.error_count += 1
+        self.status = 1
         TestResult.addError(self, test, err)
         _, _exc_str = self.errors[-1]
         output = self.complete_output()
@@ -516,6 +562,7 @@ class _TestResult(TestResult):
 
     def addFailure(self, test, err):
         self.failure_count += 1
+        self.status = 1
         TestResult.addFailure(self, test, err)
         _, _exc_str = self.failures[-1]
         output = self.complete_output()
@@ -531,9 +578,14 @@ class _TestResult(TestResult):
 class HTMLTestRunner(Template_mixin):
     """
     """
-    def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None, tester=None):
+    def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None, tester=None,is_thread=False, retry=1,save_last_try=True):
         self.stream = stream
+        self.retry = retry
+        self.is_thread = is_thread
+        self.threads = 5
+        self.save_last_try = save_last_try
         self.verbosity = verbosity
+        self.run_times = 0
         if title is None:
             self.title = self.DEFAULT_TITLE
         else:
@@ -552,7 +604,7 @@ class HTMLTestRunner(Template_mixin):
 
     def run(self, test):
         "Run the given test case or test suite."
-        result = _TestResult(self.verbosity)
+        result = _TestResult(self.verbosity, self.retry, self.save_last_try)
         test(result)
         self.stopTime = datetime.datetime.now()
         self.generateReport(test, result)
