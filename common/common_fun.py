@@ -151,11 +151,12 @@ class Common(BaseView):
         return self.now
 
     def getScreenShot(self,module):
-        time=self.getTime()
-        image_file=os.path.dirname(os.path.dirname(__file__))+'/screenshots/%s_%s.png' %(module,time)
-
+        # time=self.getTime()
+        timestrmap=time.strftime('%Y%m%d-%H.%M.%S')
+        image_file=os.path.dirname(os.path.dirname(__file__))+'/screenshots/%s%s.png' %(module,timestrmap)
         logging.info('get %s screenshot' %module)
         self.driver.get_screenshot_as_file(image_file)
+        print('screenshot:',module,timestrmap,'.png')
 
     def check_coupon(self):
         logging.info('====检查优惠券====')

@@ -56,11 +56,11 @@ class Group(Common):
         try:
             self.wait(1,self.validate).click()
         except  TimeoutException:
-            logging.error('join_group Fail!')
-            self.getScreenShot('join_group fail')
+            logging.error('加入群组失败！')
+            self.getScreenShot('加入群组失败！')
             return False
         else:
-            logging.info('join_group success!')
+            logging.info('加入群组成功')
             return True
 
     def create_group(self,name,desc):
@@ -96,11 +96,11 @@ class Group(Common):
         try:
             self.wait(5,self.group_name).click()
         except  TimeoutException:
-            logging.error('create_group fail!')
-            self.getScreenShot('create_group fail!')
+            logging.error('创建群组失败！')
+            self.getScreenShot('创建群组失败！')
             return False
         else:
-            logging.info('create_group success!')
+            logging.info('创建群组成功')
             return True
 
     def send_message(self,commenttext):
@@ -110,7 +110,7 @@ class Group(Common):
         # self.driver.find_element(*self.home_group).click()
         # self.driver.find_element(*self.group_name).click()
 
-        self.driver.find_element(*self.comment).click()
+        self.wait(1,self.comment).click()
         self.wait(1,self.comment_text).send_keys(commenttext)
         self.driver.find_element(*self.btn_face).click()
         self.driver.find_elements(*self.iv_face)[2].click()
@@ -121,11 +121,11 @@ class Group(Common):
         try:
             self.wait(5,self.oneself_text).click()
         except  TimeoutException:
-            logging.error('send_message fail!')
-            self.getScreenShot('send_message fail!')
+            logging.error('发送消息失败！')
+            self.getScreenShot('发送消息失败！')
             return False
         else:
-            logging.info('send_message success!')
+            logging.info('发送消息成功')
             return True
 
 

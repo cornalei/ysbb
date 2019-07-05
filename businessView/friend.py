@@ -73,25 +73,25 @@ class Friend(Common):
             logging.info('新浪微博好友获取成功')
             self.driver.find_element(*self.addthirduserback).click()
 
-        self.driver.find_element(*self.find_wx).click()
-        try:
-            self.wait(2,self.mm)
-        except NoSuchElementException:
-            logging.error('微信跳转失败！')
-            return False
-        else:
-            logging.info('微信跳转成功')
-            self.driver.find_element(*self.back).click()
+            self.driver.find_element(*self.find_wx).click()
+            try:
+                self.wait(2,self.mm)
+            except NoSuchElementException:
+                logging.error('微信跳转失败！')
+                return False
+            else:
+                logging.info('微信跳转成功')
+                self.driver.find_element(*self.back).click()
 
-        self.driver.find_element(*self.find_qq).click()
-        try:
-            self.driver.find_element(*self.ivTitleName)
-        except NoSuchElementException:
-            logging.error('QQ跳转失败！')
-            return False
-        else:
-            logging.info('QQ跳转成功')
-            return True
+            self.driver.find_element(*self.find_qq).click()
+            try:
+                self.driver.find_element(*self.ivTitleName)
+            except NoSuchElementException:
+                logging.error('QQ跳转失败！')
+                return False
+            else:
+                logging.info('QQ跳转成功')
+                return True
 
     def newfriend(self,username):
         self.driver.find_element(*self.iv_square).click()

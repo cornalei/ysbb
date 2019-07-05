@@ -8,7 +8,7 @@ import logging
 class TestLogin(StartEnd):
     csv_file='../data/account.csv'
 
-    @unittest.skip('test_login_wechat')
+    # @unittest.skip('test_login_wechat')
     def test_login_wechat(self):
         logging.info('======test_login_wechat=====')
         w = WechatLogin(self.driver)

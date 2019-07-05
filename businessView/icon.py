@@ -34,7 +34,7 @@ class Icon(Common):
             self.wait(5,self.lv_mine)
         except TimeoutException:
             logging.error('修改个人信息失败！')
-            self.getScreenShot('Failed to modify personal information!')
+            self.getScreenShot('修改个人信息失败！')
             return False
         else:
             logging.info('修改个人信息成功')

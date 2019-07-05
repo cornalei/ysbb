@@ -24,8 +24,8 @@ class RadioStation(Common):
                 self.driver.find_elements(*self.voice_play)[0].click()
                 return True
             except IndexError:
-                logging.error('radio_play fail!')
-                self.getScreenShot('radio_play fail!')
+                logging.error('电台播放失败！')
+                self.getScreenShot('电台播放失败！')
                 return False
 
 
@@ -37,19 +37,20 @@ class RadioStation(Common):
         try:
             text2 = self.driver.find_element(*self.audiorecommend).text
         except NoSuchElementException:
-            logging.error('radio_play fail!')
-            self.getScreenShot('radio_play fail!')
+            logging.error('电台播放失败！')
+            self.getScreenShot('电台播放失败！')
             return False
         else:
             logging.info('播放: %s' % text2)
+            logging.info('电台播放成功')
             return True
             # a = self.string_similar(text1, text2)
             # if a >= 0.85:
-            #     logging.info('radio_play success!')
+            #     logging.info('radio_play success！')
             #     return True
             # else:
-            #     logging.error('radio_play fail!')
-            #     self.getScreenShot('radio_play fail!')
+            #     logging.error('radio_play fail！')
+            #     self.getScreenShot('radio_play fail！')
             #     return False
 
 
@@ -59,6 +60,6 @@ if __name__ == '__main__':
     driver=appium_desired()
     r=RadioStation(driver)
     if r.radio_play() is False:
-        logging.error('radio_play fail!')
+        logging.error('radio_play fail！')
     else:
         r.check_radio_play()

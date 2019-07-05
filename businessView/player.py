@@ -51,7 +51,6 @@ class Player(Common):
         time.sleep(1.5)
         self.driver.find_element(*self.btn_collectaction).click()
         self.waits(1,self.collect_item)[0].click()
-        print(voice_name)
         return voice_name
 
     def check_collection(self):
@@ -75,7 +74,7 @@ class Player(Common):
             self.getScreenShot('收藏声音失败！')
             return False
         else:
-            logging.info('收藏声音成功！')
+            logging.info('收藏声音成功')
             return True
 
     def play_check(self):
@@ -94,8 +93,8 @@ class Player(Common):
         try:
             self.wait(1,self.published).click()
         except  TimeoutException:
-            logging.error('Share voice fail!')
-            self.getScreenShot('Share voice fail!')
+            logging.error('分享声音失败！')
+            self.getScreenShot('分享声音失败！')
             return False
         else:
             logging.info('分享声音到朋友圈成功')
@@ -113,18 +112,18 @@ class Player(Common):
         try:
             text = self.waits(2,self.commentcontent)[0].text
         except TimeoutException:
-            logging.error('评论失败!')
-            self.getScreenShot('评论失败!')
+            logging.error('评论失败！')
+            self.getScreenShot('评论失败！')
             return False
         else:
             logging.info('评论内容: %s' % text)
             a = '赞！'
             if a in text:
-                logging.info('评论成功!')
+                logging.info('评论成功！')
                 return True
             else:
-                logging.error('评论失败!')
-                self.getScreenShot('评论失败!')
+                logging.error('评论失败！')
+                self.getScreenShot('评论失败！')
                 return False
 
 

@@ -24,18 +24,18 @@ class LoginView(Common):
 
         logging.info('click loginBtn')
         self.driver.find_element(*self.loginBtn).click()
-        logging.info('login finished!')
+        logging.info('login finished！')
 
     def check_loginStatus(self):
         logging.info('====check_loginStatus======')
         try:
             self.wait(8,self.baobao).click()
         except  TimeoutException:
-            logging.error('login Fail!')
-            self.getScreenShot('login fail')
+            logging.error('登录失败！')
+            self.getScreenShot('登录失败！')
             return False
         else:
-            logging.info('login success!')
+            logging.info('登录成功')
             return True
 
 if __name__ == '__main__':

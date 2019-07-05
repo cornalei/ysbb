@@ -34,17 +34,17 @@ class Subscribe(Common):
         try:
             text2 = self.waits(5,self.nameRecommended)[0].text
         except TimeoutException:
-            logging.error('subscribe fail!')
-            self.getScreenShot('subscribe fail!')
+            logging.error('订阅失败！')
+            self.getScreenShot('订阅失败！')
             return False
         else:
             logging.info('专辑：%s' % text2)
             if text2 == text1:
-                logging.error('subscribe fail!')
-                self.getScreenShot('subscribe fail!')
+                logging.error('订阅失败！')
+                self.getScreenShot('订阅失败！')
                 return False
             else:
-                logging.info('subscribe success!')
+                logging.info('订阅成功')
                 return True
 
 
@@ -67,11 +67,11 @@ class Subscribe(Common):
         a=self.string_similar(text1,text2)
         # print(a)
         if a >= 0.85:
-            logging.info('subscribe_play success!')
+            logging.info('订阅播放成功')
             return True
         else:
-            logging.error('subscribe_play fail!')
-            self.getScreenShot('subscribe_play fail!')
+            logging.error('订阅播放失败！')
+            self.getScreenShot('订阅播放失败！')
             return False
 
     def subscribes_play(self):
@@ -88,7 +88,7 @@ class Subscribe(Common):
             self.getScreenShot('subscribes专辑数据加载失败！')
             return False
         else:
-            logging.info('大家都在听专辑数据加载成功！')
+            logging.info('大家都在听专辑数据加载成功')
 
 
 

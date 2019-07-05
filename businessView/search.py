@@ -24,11 +24,11 @@ class Search(Common):
          try:
              self.waits(8,self.heartstation_play)[0].click()
          except TimeoutException:
-             logging.error('search_voice fail!')
-             self.getScreenShot('search_voice fail!')
+             logging.error('搜索声音失败！')
+             self.getScreenShot('搜索声音失败！')
              return False
          else:
-             logging.info('search_voice success!')
+             logging.info('搜索声音成功')
              return True
 
 
@@ -38,11 +38,11 @@ class Search(Common):
         try:
             self.waits(3,self.userlayout)[0]
         except  TimeoutException:
-            logging.error('search_user Fail!')
-            self.getScreenShot('search_user fail')
+            logging.error('搜索用户失败！')
+            self.getScreenShot('搜索用户失败！')
             return False
         else:
-            logging.info('search_user success!')
+            logging.info('搜索用户成功')
             return True
 
 
@@ -52,11 +52,11 @@ class Search(Common):
         try:
             self.waits(3,self.albumlayout)[0]
         except  TimeoutException:
-            logging.error('search_album Fail!')
-            self.getScreenShot('search_album fail')
+            logging.error('搜索专辑失败！')
+            self.getScreenShot('搜索专辑失败！')
             return False
         else:
-            logging.info('search_album success!')
+            logging.info('搜索专辑成功')
             return True
 
 

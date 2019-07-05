@@ -106,7 +106,7 @@ class Hardcover(Common):
             self.getScreenShot('已购专辑加载失败！')
             return False
         else:
-            logging.info('已购专辑加载成功！')
+            logging.info('已购专辑加载成功')
             return True
 
 

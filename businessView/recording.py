@@ -61,11 +61,11 @@ class Recording(Common):
             WebDriverWait(self.driver,15).until(lambda x:x.find_element_by_xpath('//*[@resource-id="com.clickcoo.yishuobaobao:id/tv_voice_title" and @text="%s" ]' %self.title))
         except TimeoutException:
             logging.error('录音发布失败！')
-            self.getScreenShot('Recording release failed!')
+            self.getScreenShot('录音发布失败！')
             return False
         else:
             self.driver.find_elements(*self.paly_state)[0].click()
-            logging.info('录音发布成功！')
+            logging.info('录音发布成功')
             return True
 
     def upload_voice(self):
@@ -88,11 +88,11 @@ class Recording(Common):
             WebDriverWait(self.driver,20).until(lambda x:x.find_element_by_xpath('//*[@resource-id="com.clickcoo.yishuobaobao:id/tv_voice_title" and @text="%s" ]' %self.title))
         except TimeoutException:
             logging.error('录音发布失败！')
-            self.getScreenShot('Recording release failed!')
+            self.getScreenShot('录音发布失败！')
             return False
         else:
             self.driver.find_elements(*self.paly_state)[0].click()
-            logging.info('录音发布成功！')
+            logging.info('录音发布成功')
             return True
 
 if __name__ == '__main__':

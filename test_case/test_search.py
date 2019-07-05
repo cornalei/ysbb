@@ -4,6 +4,7 @@ from businessView.search import Search
 import unittest
 import logging
 
+
 class TestSearch(StartEnd):
     # @unittest.skip('test_search')
     def test_search(self):

@@ -25,10 +25,10 @@ class Services(Common):
             self.driver.find_element(*self.activationation).click()
         except NoSuchElementException:
             logging.error('免流量加载失败！')
-            self.getScreenShot('免流量加载失败!')
+            self.getScreenShot('免流量加载失败！')
             return False
         else:
-            logging.info('免流量加载成功！')
+            logging.info('免流量加载成功')
             return True
 
     def advice(self):
@@ -41,10 +41,10 @@ class Services(Common):
             self.driver.find_element(*self.lv_mine).click()
         except NoSuchElementException:
             logging.error('意见提交失败！')
-            self.getScreenShot('意见提交失败!')
+            self.getScreenShot('意见提交失败！')
             return False
         else:
-            logging.info('意见提交成功！')
+            logging.info('意见提交成功')
             return True
 
 

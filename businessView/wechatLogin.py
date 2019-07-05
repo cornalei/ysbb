@@ -33,11 +33,11 @@ class WechatLogin(Common):
             self.wait(8,self.button_myself).click()
             # self.driver.find_element(*self.username)
         except  TimeoutException:
-            logging.error('login Fail!')
-            self.getScreenShot('login fail')
+            logging.error('登录失败！')
+            self.getScreenShot('登录失败！')
             return False
         else:
-            logging.info('login success!')
+            logging.info('登录成功')
             self.logout_action()
             return True
 
