@@ -40,10 +40,16 @@ class Player(Common):
         logging.info('===转发声音===')
         self.driver.find_element(*self.playerrevolve).click()
         self.wait(1,self.forwardaction).click()
-        self.wait(1,self.forwardtext).send_keys('优秀！')
-        self.driver.find_element(*self.audioforwardsubmit).click()
-        logging.info('转发成功')
-        return True
+        try:
+            self.wait(2,self.forwardtext).send_keys('优秀！')
+        except TimeoutException as msg:
+            logging.error('%s'%msg)
+            self.getScreenShot('转发失败！')
+            return False
+        else:
+            self.driver.find_element(*self.audioforwardsubmit).click()
+            logging.info('转发成功')
+            return True
 
     def play_collection(self):
         self.driver.find_element(*self.playerrevolve).click()
