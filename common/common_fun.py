@@ -1,7 +1,7 @@
 from baseView.baseView import BaseView
 from selenium.webdriver.support.ui import WebDriverWait
 from common.desired_caps_l import appium_desired
-from selenium.common.exceptions import NoSuchElementException,TimeoutException
+from selenium.common.exceptions import TimeoutException
 import logging
 from selenium.webdriver.common.by import By
 import time
@@ -20,7 +20,7 @@ class Common(BaseView):
     #     logging.info('==跳过按钮==')
     #     try:
     #         tiaoguo = self.find_element(self.tiaoguo)
-    #     except NoSuchElementException:
+    #     except TimeoutException:
     #         logging.info('==没有跳过按钮==')
     #     else:
     #         tiaoguo.click()
@@ -30,7 +30,7 @@ class Common(BaseView):
         logging.info('==一说宝宝引导==')
         try:
             baobao = self.find_element(self.baobao)
-        except NoSuchElementException:
+        except TimeoutException:
             logging.info('==没有一说宝宝引导==')
         else:
             baobao.click()
@@ -40,7 +40,7 @@ class Common(BaseView):
         logging.info('===电台引导===')
         try:
             radio = self.find_element(self.friend_trends)
-        except NoSuchElementException:
+        except TimeoutException:
             logging.info('==没有电台引导==')
         else:
             radio.click()
@@ -109,7 +109,7 @@ class Common(BaseView):
                 if i<10:
                     continue
                 else:
-                    raise NoSuchElementException
+                    raise TimeoutException
 
 
     def swipeUp_ss(self,*element):
@@ -150,7 +150,7 @@ class Common(BaseView):
         logging.info('====检查优惠券====')
         try:
             element=self.find_element(self.coupon)
-        except NoSuchElementException:
+        except TimeoutException:
             logging.info('===没有优惠券===')
         else:
             element.click()
@@ -162,7 +162,7 @@ class Common(BaseView):
     #     logging.info('=====check_account_alert====')
     #     try:
     #         element=self.find_element(self.tip_commit)
-    #     except NoSuchElementException:
+    #     except TimeoutException:
     #         pass
     #     else:
     #         logging.info('close tip_commit')
