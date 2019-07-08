@@ -13,17 +13,17 @@ class LoginView(Common):
     def login_action(self,username,password):
         self.swipeLeft2()
         logging.info('===引导页登录====')
-        self.driver.find_element(*self.tv_login).click()
+        self.find_element(self.tv_login).click()
 
         logging.info('============login_action==============')
         logging.info('username is:%s' %username)
         self.wait(1,self.username_type).send_keys(username)
 
         logging.info('password is:%s'%password)
-        self.driver.find_element(*self.password_type).send_keys(password)
+        self.find_element(self.password_type).send_keys(password)
 
         logging.info('click loginBtn')
-        self.driver.find_element(*self.loginBtn).click()
+        self.find_element(self.loginBtn).click()
         logging.info('login finished！')
 
     def check_loginStatus(self):

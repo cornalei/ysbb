@@ -4,7 +4,7 @@ from common.desired_caps_l import appium_desired
 from selenium.common.exceptions import NoSuchElementException,TimeoutException
 import logging
 from selenium.webdriver.common.by import By
-import time,os
+import time
 import csv
 import difflib
 
@@ -19,7 +19,7 @@ class Common(BaseView):
     # def check_Tiaoguo(self):
     #     logging.info('==跳过按钮==')
     #     try:
-    #         tiaoguo = self.driver.find_element(*self.tiaoguo)
+    #         tiaoguo = self.find_element(self.tiaoguo)
     #     except NoSuchElementException:
     #         logging.info('==没有跳过按钮==')
     #     else:
@@ -29,7 +29,7 @@ class Common(BaseView):
     def check_Baobao(self):
         logging.info('==一说宝宝引导==')
         try:
-            baobao = self.driver.find_element(*self.baobao)
+            baobao = self.find_element(self.baobao)
         except NoSuchElementException:
             logging.info('==没有一说宝宝引导==')
         else:
@@ -39,7 +39,7 @@ class Common(BaseView):
     def check_radio(self):
         logging.info('===电台引导===')
         try:
-            radio = self.driver.find_element(*self.friend_trends)
+            radio = self.find_element(self.friend_trends)
         except NoSuchElementException:
             logging.info('==没有电台引导==')
         else:
@@ -101,7 +101,7 @@ class Common(BaseView):
         i = 0
         while i < 10:
             try:
-                self.driver.find_element(*element).click()
+                self.find_element(*element).click()
                 break
             except:
                 self.swipeUp_l()
@@ -116,7 +116,7 @@ class Common(BaseView):
         i = 0
         while i < 10:
             try:
-                self.driver.find_elements(*element)[0].click()
+                self.find_elements(*element)[0].click()
                 break
             except:
                 self.swipeUp_l()
@@ -130,7 +130,7 @@ class Common(BaseView):
         i = 0
         while i < 10:
             try:
-                a=self.driver.find_elements(*element)[0]
+                a=self.find_elements(*element)[0]
                 break
             except:
                 self.swipeUp()
@@ -144,36 +144,24 @@ class Common(BaseView):
         for i in range(2):
             self.swipeLeft()
             time.sleep(1)
-        time.sleep(4)
-
-    def getTime(self):
-        self.now=time.strftime("%Y-%m-%d %H_%M_%S")
-        return self.now
-
-    def getScreenShot(self,module):
-        # time=self.getTime()
-        timestrmap=time.strftime('%Y%m%d-%H.%M.%S')
-        image_file=os.path.dirname(os.path.dirname(__file__))+'/screenshots/%s%s.png' %(module,timestrmap)
-        logging.info('get %s screenshot' %module)
-        self.driver.get_screenshot_as_file(image_file)
-        print('screenshot:',module,timestrmap,'.png')
+        time.sleep(1)
 
     def check_coupon(self):
         logging.info('====检查优惠券====')
         try:
-            element=self.driver.find_element(*self.coupon)
+            element=self.find_element(self.coupon)
         except NoSuchElementException:
             logging.info('===没有优惠券===')
         else:
             element.click()
-            self.driver.find_element(*self.iv_close).click()
+            self.find_element(self.iv_close).click()
             time.sleep(2)
 
     # def check_account_alert(self):
     #     #检测是否有账号被挤下的登出提醒
     #     logging.info('=====check_account_alert====')
     #     try:
-    #         element=self.driver.find_element(*self.tip_commit)
+    #         element=self.find_element(self.tip_commit)
     #     except NoSuchElementException:
     #         pass
     #     else:

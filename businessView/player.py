@@ -1,5 +1,5 @@
 import logging,time
-from common.common_fun import Common,TimeoutException,NoSuchElementException
+from common.common_fun import Common,TimeoutException,TimeoutException
 from common.desired_caps import appium_desired
 from selenium.webdriver.common.by import By
 
@@ -38,7 +38,7 @@ class Player(Common):
 
     def forwarding(self):
         logging.info('===转发声音===')
-        self.driver.find_element(*self.playerrevolve).click()
+        self.find_element(self.playerrevolve).click()
         self.wait(1,self.forwardaction).click()
         try:
             self.wait(2,self.forwardtext).send_keys('优秀！')
@@ -47,15 +47,15 @@ class Player(Common):
             self.getScreenShot('转发失败！')
             return False
         else:
-            self.driver.find_element(*self.audioforwardsubmit).click()
+            self.find_element(self.audioforwardsubmit).click()
             logging.info('转发成功')
             return True
 
     def play_collection(self):
-        self.driver.find_element(*self.playerrevolve).click()
+        self.find_element(self.playerrevolve).click()
         voice_name=self.wait(1,self.audiorecommend).text
         time.sleep(1.5)
-        self.driver.find_element(*self.btn_collectaction).click()
+        self.find_element(self.btn_collectaction).click()
         self.waits(1,self.collect_item)[0].click()
         return voice_name
 
@@ -63,19 +63,19 @@ class Player(Common):
         name = self.play_collection()
         element = (By.XPATH, "//android.widget.TextView[contains(@text,'%s')]" % name)
         try:
-            self.driver.find_element(*self.btn_back).click()
-        except NoSuchElementException:
-            self.driver.find_element(*self.iv_return).click()
+            self.find_element(self.btn_back).click()
+        except TimeoutException:
+            self.find_element(self.iv_return).click()
         else:
-            self.driver.find_element(*self.iv_return).click()
+            self.find_element(self.iv_return).click()
 
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.collect).click()
-        self.driver.find_elements(*self.collect_item)[0].click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.collect).click()
+        self.find_elements(self.collect_item)[0].click()
         time.sleep(2)
         try:
             self.swipeUp_s(*element)
-        except NoSuchElementException:
+        except TimeoutException:
             logging.error('收藏声音失败！')
             self.getScreenShot('收藏声音失败！')
             return False
@@ -84,16 +84,14 @@ class Player(Common):
             return True
 
     def play_check(self):
-        self.driver.find_element(*self.playerrevolve).click()
+        self.find_element(self.playerrevolve).click()
         self.wait(2,self.audiomoreaction).click()
-        self.driver.find_elements(*self.reportselect)[-1].click()
-        self.driver.find_element(*self.editTextMessage).send_keys('lei-举报测试，tks！')
-        self.driver.find_element(*self.btn_reportcommit).click()
-        self.driver.find_element(*self.btn_dialogconfirm).click()
+        self.find_elements(self.reportselect)[-1].click()
+        self.find_element(self.editTextMessage).send_keys('lei-举报测试，tks！')
+        self.find_element(self.btn_reportcommit).click()
+        self.find_element(self.btn_dialogconfirm).click()
         logging.info('举报成功')
 
-        logging.info('===点击下载===')
-        self.driver.find_element(*self.btn_downloadaction).click()
         self.wait(5,self.btn_shareaction).click()
         self.wait(1,self.share_wechat).click()
         try:
@@ -107,12 +105,12 @@ class Player(Common):
             return True
 
     def comments(self):
-        self.driver.find_element(*self.playerrevolve).click()
+        self.find_element(self.playerrevolve).click()
         self.wait(2,self.comment).click()
         self.wait(1,self.commenttext).send_keys('赞！')
-        self.driver.find_element(*self.btn_face).click()
-        self.driver.find_elements(*self.item_iv_face)[0].click()
-        self.driver.find_element(*self.sendcomment).click()
+        self.find_element(self.btn_face).click()
+        self.find_elements(self.item_iv_face)[0].click()
+        self.find_element(self.sendcomment).click()
 
     def check_comments(self):
         try:

@@ -1,5 +1,5 @@
 import logging
-from common.common_fun import Common,NoSuchElementException,TimeoutException
+from common.common_fun import Common,TimeoutException
 from common.desired_caps import appium_desired
 from selenium.webdriver.common.by import By
 
@@ -38,17 +38,17 @@ class Friend(Common):
 
 
     def friends(self):
-        self.driver.find_element(*self.iv_square).click()
+        self.find_element(self.iv_square).click()
         logging.info('===搜索已添加好友===')
-        self.driver.find_element(*self.private_letter).click()
+        self.find_element(self.private_letter).click()
         try:
-            name1=self.driver.find_elements(*self.user_name)[0].text
-        except IndexError:
+            name1=self.find_elements(self.user_name)[0].text
+        except TimeoutException:
             logging.info('该用户没有好友')
             return False
         else:
-            self.driver.find_element(*self.search).send_keys(name1)
-            name2 = self.driver.find_elements(*self.user_name)[0].text
+            self.find_element(self.search).send_keys(name1)
+            name2 = self.find_elements(self.user_name)[0].text
             if name1==name2:
                 logging.info('搜索好友成功')
                 return True
@@ -58,11 +58,11 @@ class Friend(Common):
                 return False
 
     def thirdfriend(self):
-        self.driver.find_element(*self.iv_square).click()
+        self.find_element(self.iv_square).click()
         logging.info('===新的朋友-第三方===')
-        self.driver.find_element(*self.new_friend).click()
-        self.driver.find_element(*self.btn_add).click()
-        self.driver.find_element(*self.find_sina).click()
+        self.find_element(self.new_friend).click()
+        self.find_element(self.btn_add).click()
+        self.find_element(self.find_sina).click()
         try:
             self.waits(5,self.circlememberlayout)[0]
         except TimeoutException:
@@ -71,22 +71,22 @@ class Friend(Common):
             return False
         else:
             logging.info('新浪微博好友获取成功')
-            self.driver.find_element(*self.addthirduserback).click()
+            self.find_element(self.addthirduserback).click()
 
-            self.driver.find_element(*self.find_wx).click()
+            self.find_element(self.find_wx).click()
             try:
                 self.wait(2,self.mm)
-            except NoSuchElementException:
+            except TimeoutException:
                 logging.error('微信跳转失败！')
                 return False
             else:
                 logging.info('微信跳转成功')
-                self.driver.find_element(*self.back).click()
+                self.find_element(self.back).click()
 
-            self.driver.find_element(*self.find_qq).click()
+            self.find_element(self.find_qq).click()
             try:
-                self.driver.find_element(*self.ivTitleName)
-            except NoSuchElementException:
+                self.find_element(self.ivTitleName)
+            except TimeoutException:
                 logging.error('QQ跳转失败！')
                 return False
             else:
@@ -94,29 +94,29 @@ class Friend(Common):
                 return True
 
     def newfriend(self,username):
-        self.driver.find_element(*self.iv_square).click()
+        self.find_element(self.iv_square).click()
         logging.info('===新的朋友===')
-        self.driver.find_element(*self.new_friend).click()
-        self.driver.find_element(*self.btn_add).click()
-        self.driver.find_element(*self.find_phone).click()
+        self.find_element(self.new_friend).click()
+        self.find_element(self.btn_add).click()
+        self.find_element(self.find_phone).click()
         try:
-            title = self.driver.find_element(*self.thirdplatformname).text
-        except NoSuchElementException:
+            title = self.find_element(self.thirdplatformname).text
+        except TimeoutException:
             logging.error('通讯录好友页面加载失败！')
             self.getScreenShot('通讯录好友页面加载失败！')
             return False
         else:
             if title == '通讯录好友':
                 logging.info('跳转通讯录好友界面')
-                self.driver.find_element(*self.addthirduserback).click()
+                self.find_element(self.addthirduserback).click()
             else:
                 logging.error('通讯录好友页面加载失败！')
                 self.getScreenShot('通讯录好友页面加载失败！')
                 return False
 
-        self.driver.find_element(*self.friend_search).click()
-        self.driver.find_element(*self.serachkey).send_keys(username)
-        self.driver.find_element(*self.searchstart).click()
+        self.find_element(self.friend_search).click()
+        self.find_element(self.serachkey).send_keys(username)
+        self.find_element(self.searchstart).click()
 
         try:
             self.waits(5,self.userlayout)[0]

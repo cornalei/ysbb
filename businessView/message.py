@@ -15,20 +15,20 @@ class Message(Common):
     common_back = (By.ID, 'com.clickcoo.yishuobaobao:id/btn_common_back')  # 通知-返回
 
     def delete_message(self):
-        self.driver.find_element(*self.iv_square).click()
+        self.find_element(self.iv_square).click()
         logging.info('===清空与我相关===')
-        self.driver.find_element(*self.relative_to_me).click()
-        self.driver.find_element(*self.notice_right).click()
-        self.driver.find_element(*self.notice_back).click()
+        self.find_element(self.relative_to_me).click()
+        self.find_element(self.notice_right).click()
+        self.find_element(self.notice_back).click()
 
         logging.info('===清空通知===')
-        self.driver.find_element(*self.notification).click()
-        self.driver.find_element(*self.common_right).click()
-        self.driver.find_element(*self.common_back).click()
+        self.find_element(self.notification).click()
+        self.find_element(self.common_right).click()
+        self.find_element(self.common_back).click()
 
         logging.info('===清空群组通知===')
-        self.driver.find_element(*self.group_notification).click()
-        self.driver.find_element(*self.common_right).click()
+        self.find_element(self.group_notification).click()
+        self.find_element(self.common_right).click()
         return True
 
 

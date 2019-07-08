@@ -21,7 +21,7 @@ class WechatLogin(Common):
         self.check_Baobao()
         self.check_coupon()
         self.wait(1,self.button_myself).click()
-        self.driver.find_element(*self.button_visitor).click()
+        self.find_element(self.button_visitor).click()
 
         logging.info('============login_action==============')
         self.wait(1,self.btn_wechatlogin).click()
@@ -31,7 +31,7 @@ class WechatLogin(Common):
         logging.info('====check_loginStatus======')
         try:
             self.wait(8,self.button_myself).click()
-            # self.driver.find_element(*self.username)
+            # self.find_element(self.username)
         except  TimeoutException:
             logging.error('登录失败！')
             self.getScreenShot('登录失败！')
@@ -43,8 +43,8 @@ class WechatLogin(Common):
 
     def logout_action(self):
         logging.info('=====logout_action======')
-        self.driver.find_element(*self.setButton).click()
-        self.driver.find_element(*self.logoutBtn).click()
+        self.find_element(self.setButton).click()
+        self.find_element(self.logoutBtn).click()
 
 
 if __name__ == '__main__':

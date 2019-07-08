@@ -44,12 +44,12 @@ class Group(Common):
 
     def join_group(self,collect_name):
         logging.info('===申请加入群组====')
-        self.driver.find_element(*self.trends).click()
+        self.find_element(self.trends).click()
         self.check_radio()
-        self.driver.find_element(*self.home_group).click()
+        self.find_element(self.home_group).click()
         self.waits(3,self.isjoin)[1].click()
         self.wait(1,self.collect_name).send_keys(collect_name)
-        self.driver.find_element(*self.btn_confirm).click()
+        self.find_element(self.btn_confirm).click()
 
     def check_join_group(self):
         logging.info('====check_join_group======')
@@ -65,30 +65,30 @@ class Group(Common):
 
     def create_group(self,name,desc):
         logging.info('===创建群组====')
-        self.driver.find_element(*self.trends).click()
-        self.driver.find_element(*self.home_group).click()
+        self.find_element(self.trends).click()
+        self.find_element(self.home_group).click()
 
-        self.driver.find_element(*self.create).click()
-        self.driver.find_element(*self.create_picture).click()
+        self.find_element(self.create).click()
+        self.find_element(self.create_picture).click()
         self.wait(2,self.choose_picture).click()
         self.wait(2,self.pictures).click()
         self.wait(5,self.multi_confirm)
-        self.driver.find_element(*self.multi_confirm).click()
-        self.driver.find_element(*self.save_tv).click()
+        self.find_element(self.multi_confirm).click()
+        self.find_element(self.save_tv).click()
 
         self.wait(2,self.create_name).send_keys(name)
-        self.driver.find_element(*self.create_desc).send_keys(desc)
-        self.driver.find_element(*self.select).click()
-        self.driver.find_element(*self.rl_next).click()
+        self.find_element(self.create_desc).send_keys(desc)
+        self.find_element(self.select).click()
+        self.find_element(self.rl_next).click()
 
         try:
             self.waits(2,self.aod_item)[0].click()
             self.waits(2,self.aod_item)[1].click()
         except TimeoutException:
-            self.driver.find_element(*self.friend_back).click()
+            self.find_element(self.friend_back).click()
             return False
         else:
-            self.driver.find_element(*self.friend_right).click()
+            self.find_element(self.friend_right).click()
             return True
 
     def check_create_group(self):
@@ -106,15 +106,15 @@ class Group(Common):
     def send_message(self,commenttext):
         logging.info('===发送群组消息====')
 
-        # self.driver.find_element(*self.trends).click()
-        # self.driver.find_element(*self.home_group).click()
-        # self.driver.find_element(*self.group_name).click()
+        # self.find_element(self.trends).click()
+        # self.find_element(self.home_group).click()
+        # self.find_element(self.group_name).click()
 
         self.wait(1,self.comment).click()
         self.wait(1,self.comment_text).send_keys(commenttext)
-        self.driver.find_element(*self.btn_face).click()
-        self.driver.find_elements(*self.iv_face)[2].click()
-        self.driver.find_element(*self.sendcomment).click()
+        self.find_element(self.btn_face).click()
+        self.find_elements(self.iv_face)[2].click()
+        self.find_element(self.sendcomment).click()
 
     def check_send_message(self):
         logging.info('====check_send_message======')

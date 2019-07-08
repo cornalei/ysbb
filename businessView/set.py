@@ -1,5 +1,5 @@
 import logging
-from common.common_fun import Common,NoSuchElementException
+from common.common_fun import Common,TimeoutException
 from common.desired_caps import appium_desired
 from selenium.webdriver.common.by import By
 
@@ -19,35 +19,35 @@ class Set(Common):
     # versioncode = (By.ID, 'com.clickcoo.yishuobaobao:id/tv_versioncode')  # 版本号
 
     def sets(self):
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.iv_setting).click()
-        self.driver.find_element(*self.aboutyishuo).click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.iv_setting).click()
+        self.find_element(self.aboutyishuo).click()
         logging.info('===检查关于一说宝宝===')
         try:
-            self.driver.find_element(*self.TextView01).click()
-        except NoSuchElementException:
+            self.find_element(self.TextView01).click()
+        except TimeoutException:
             logging.error('没有官方微博信息！')
             self.getScreenShot('没有官方微博信息！')
             return False
         else:
             logging.info('官方信息正常')
-            self.driver.find_element(*self.aboutback).click()
+            self.find_element(self.aboutback).click()
 
         logging.info('===检查错误验证码能否使用===')
         try:
-            self.driver.find_element(*self.account).click()
-        except NoSuchElementException:
+            self.find_element(self.account).click()
+        except TimeoutException:
             logging.error('长连接断开！')
             self.getScreenShot('长连接断开！')
         else:
-            self.driver.find_element(*self.accountpass).click()
-            self.driver.find_element(*self.sendcode).click()
+            self.find_element(self.accountpass).click()
+            self.find_element(self.sendcode).click()
             self.wait(3,self.phone)
-            self.driver.find_element(*self.phone).send_keys('111111')
-            self.driver.find_element(*self.position).click()
+            self.find_element(self.phone).send_keys('111111')
+            self.find_element(self.position).click()
             try:
-                self.driver.find_element(*self.setpassword)
-            except NoSuchElementException:
+                self.find_element(self.setpassword)
+            except TimeoutException:
                 logging.info('验证码正常')
                 return True
             else:

@@ -21,15 +21,15 @@ class Subscribe(Common):
 
     def subscribe(self):
         logging.info('===订阅大家都在听====')
-        self.driver.find_element(*self.trends).click()
-        self.driver.find_element(*self.home_subscribe).click()
+        self.find_element(self.trends).click()
+        self.find_element(self.home_subscribe).click()
         time.sleep(0.5)
-        self.swipeUps(*self.subscriptionJoin)
+        self.swipeUps(self.subscriptionJoin)
 
     def check_subscribe(self):
         text1=self.waits(1,self.nameRecommended)[0].text
         logging.info('专辑：%s' %text1)
-        self.driver.find_elements(*self.subscriptionJoin)[0].click()
+        self.find_elements(self.subscriptionJoin)[0].click()
         time.sleep(3)
         try:
             text2 = self.waits(5,self.nameRecommended)[0].text
@@ -50,9 +50,9 @@ class Subscribe(Common):
 
     def subscribe_play(self):
         logging.info('===播放我的订阅中专辑声音====')
-        self.driver.find_element(*self.trends).click()
+        self.find_element(self.trends).click()
         self.wait(1,self.home_subscribe).click()
-        self.driver.find_elements(*self.subscriptionName)[0].click()
+        self.find_elements(self.subscriptionName)[0].click()
 
 
 
@@ -60,9 +60,9 @@ class Subscribe(Common):
         logging.info('===检查播放专辑声音====')
         text1=self.waits(1,self.voice_name)[0].text
         logging.info('点播: %s' %text1)
-        self.driver.find_elements(*self.playaudio)[0].click()
+        self.find_elements(self.playaudio)[0].click()
         self.wait(1,self.playerrevolve).click()
-        text2 = self.driver.find_element(*self.audiorecommend).text
+        text2 = self.find_element(self.audiorecommend).text
         logging.info('播放: %s' %text2)
         a=self.string_similar(text1,text2)
         # print(a)
@@ -76,11 +76,11 @@ class Subscribe(Common):
 
     def subscribes_play(self):
         logging.info('===播放大家都在听中专辑声音====')
-        self.driver.find_element(*self.trends).click()
+        self.find_element(self.trends).click()
         self.check_radio()
-        self.driver.find_element(*self.home_subscribe).click()
+        self.find_element(self.home_subscribe).click()
         time.sleep(2)
-        self.swipeUp_s(*self.find_more)
+        self.swipeUp_s(self.find_more)
         try:
             self.waits(2,self.album_item)[0].click()
         except TimeoutException:

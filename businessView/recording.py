@@ -36,25 +36,25 @@ class Recording(Common):
         self.title=title
 
     def recording(self):
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.recording_btn).click()
-        self.driver.find_element(*self.record).click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.recording_btn).click()
+        self.find_element(self.record).click()
         time.sleep(3)
-        self.driver.find_element(*self.record).click()
-        self.driver.find_element(*self.rerecord).click()
-        self.driver.find_element(*self.confirm).click()
+        self.find_element(self.record).click()
+        self.find_element(self.rerecord).click()
+        self.find_element(self.confirm).click()
         time.sleep(15)
-        self.driver.find_element(*self.record).click()
-        self.driver.find_element(*self.save).click()
-        self.driver.find_element(*self.publish).click()
-        self.driver.find_element(*self.dialog).click()
-        self.driver.find_element(*self.audio_desc).send_keys(self.describe)
-        self.driver.find_element(*self.audiodesc).click()
-        self.driver.find_element(*self.native_pictrue).click()
-        self.driver.find_elements(*self.selectbtn)[1].click()
-        self.driver.find_element(*self.phtoalbumsubmit).click()
-        self.driver.find_element(*self.audio_title).send_keys(self.title)
-        self.driver.find_element(*self.send_audio).click()
+        self.find_element(self.record).click()
+        self.find_element(self.save).click()
+        self.find_element(self.publish).click()
+        self.find_element(self.dialog).click()
+        self.find_element(self.audio_desc).send_keys(self.describe)
+        self.find_element(self.audiodesc).click()
+        self.find_element(self.native_pictrue).click()
+        self.find_elements(self.selectbtn)[1].click()
+        self.find_element(self.phtoalbumsubmit).click()
+        self.find_element(self.audio_title).send_keys(self.title)
+        self.find_element(self.send_audio).click()
 
     def check_recording(self):
         try:
@@ -64,24 +64,24 @@ class Recording(Common):
             self.getScreenShot('录音发布失败！')
             return False
         else:
-            self.driver.find_elements(*self.paly_state)[0].click()
+            self.find_elements(self.paly_state)[0].click()
             logging.info('录音发布成功')
             return True
 
     def upload_voice(self):
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.recording_btn).click()
-        self.driver.find_element(*self.nativeaudiochoose).click()
-        self.driver.find_elements(*self.audioname)[0].click()
-        self.driver.find_element(*self.nativeaudiopublish).click()
-        self.driver.find_element(*self.dialog).click()
-        self.driver.find_element(*self.audio_desc).send_keys(self.describe)
-        self.driver.find_element(*self.audiodesc).click()
-        self.driver.find_element(*self.native_pictrue).click()
-        self.driver.find_elements(*self.selectbtn)[1].click()
-        self.driver.find_element(*self.phtoalbumsubmit).click()
-        self.driver.find_element(*self.audio_title).send_keys(self.title)
-        self.driver.find_element(*self.send_audio).click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.recording_btn).click()
+        self.find_element(self.nativeaudiochoose).click()
+        self.find_elements(self.audioname)[0].click()
+        self.find_element(self.nativeaudiopublish).click()
+        self.find_element(self.dialog).click()
+        self.find_element(self.audio_desc).send_keys(self.describe)
+        self.find_element(self.audiodesc).click()
+        self.find_element(self.native_pictrue).click()
+        self.find_elements(self.selectbtn)[1].click()
+        self.find_element(self.phtoalbumsubmit).click()
+        self.find_element(self.audio_title).send_keys(self.title)
+        self.find_element(self.send_audio).click()
 
     def check_upload_voice(self):
         try:
@@ -91,7 +91,7 @@ class Recording(Common):
             self.getScreenShot('录音发布失败！')
             return False
         else:
-            self.driver.find_elements(*self.paly_state)[0].click()
+            self.find_elements(self.paly_state)[0].click()
             logging.info('录音发布成功')
             return True
 

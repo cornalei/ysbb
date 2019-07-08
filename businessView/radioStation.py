@@ -1,5 +1,5 @@
 import logging
-from common.common_fun import Common,NoSuchElementException,time
+from common.common_fun import Common,TimeoutException,time
 from common.desired_caps import appium_desired
 from selenium.webdriver.common.by import By
 class RadioStation(Common):
@@ -12,18 +12,18 @@ class RadioStation(Common):
 
     def radio_play(self):
         logging.info('===动态-电台====')
-        self.driver.find_element(*self.trends).click()
+        self.find_element(self.trends).click()
         self.check_radio()
         self.swipeUp()
         time.sleep(1)
         try:
-            self.driver.find_elements(*self.paly_state)[0].click()
+            self.find_elements(self.paly_state)[0].click()
             return True
-        except IndexError:
+        except TimeoutException:
             try:
-                self.driver.find_elements(*self.voice_play)[0].click()
+                self.find_elements(self.voice_play)[0].click()
                 return True
-            except IndexError:
+            except TimeoutException:
                 logging.error('电台播放失败！')
                 self.getScreenShot('电台播放失败！')
                 return False
@@ -33,10 +33,10 @@ class RadioStation(Common):
         logging.info('====check_radio_play======')
         text1 = self.waits(1,self.voice_title)[0].text
         logging.info('点播: %s' % text1)
-        self.driver.find_element(*self.playerrevolve).click()
+        self.find_element(self.playerrevolve).click()
         try:
-            text2 = self.driver.find_element(*self.audiorecommend).text
-        except NoSuchElementException:
+            text2 = self.find_element(self.audiorecommend).text
+        except TimeoutException:
             logging.error('电台播放失败！')
             self.getScreenShot('电台播放失败！')
             return False

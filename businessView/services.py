@@ -1,5 +1,5 @@
 import logging
-from common.common_fun import Common,NoSuchElementException
+from common.common_fun import Common,TimeoutException
 from common.desired_caps import appium_desired
 from selenium.webdriver.common.by import By
 
@@ -19,11 +19,11 @@ class Services(Common):
 
 
     def free(self):
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.free_flow).click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.free_flow).click()
         try:
-            self.driver.find_element(*self.activationation).click()
-        except NoSuchElementException:
+            self.find_element(self.activationation).click()
+        except TimeoutException:
             logging.error('免流量加载失败！')
             self.getScreenShot('免流量加载失败！')
             return False
@@ -32,14 +32,14 @@ class Services(Common):
             return True
 
     def advice(self):
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.suggestion).click()
-        self.driver.find_element(*self.problemcontent).send_keys('lei-意见反馈测试，tks!')
-        self.driver.find_element(*self.contact).send_keys('123456')
-        self.driver.find_element(*self.problemsubmit).click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.suggestion).click()
+        self.find_element(self.problemcontent).send_keys('lei-意见反馈测试，tks!')
+        self.find_element(self.contact).send_keys('123456')
+        self.find_element(self.problemsubmit).click()
         try:
-            self.driver.find_element(*self.lv_mine).click()
-        except NoSuchElementException:
+            self.find_element(self.lv_mine).click()
+        except TimeoutException:
             logging.error('意见提交失败！')
             self.getScreenShot('意见提交失败！')
             return False

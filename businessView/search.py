@@ -15,7 +15,7 @@ class Search(Common):
 
     def search_action(self,keyword):
         logging.info('===搜索====')
-        self.driver.find_element(*self.bn_search).click()
+        self.find_element(self.bn_search).click()
         self.wait(2,self.et_serachkey).send_keys(keyword)
         self.wait(1,self.btn_searchstart).click()
 
@@ -47,7 +47,7 @@ class Search(Common):
 
 
     def check_album(self):
-        self.driver.find_element(*self.btn_searchalbum).click()
+        self.find_element(self.btn_searchalbum).click()
         logging.info('====check search_album======')
         try:
             self.waits(3,self.albumlayout)[0]

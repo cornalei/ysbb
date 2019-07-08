@@ -17,19 +17,19 @@ class Icon(Common):
     updatesubmit = (By.ID, 'com.clickcoo.yishuobaobao:id/btn_updatesubmit')  # 完成
 
     def personal(self,name,describe):
-        self.driver.find_element(*self.lv_mine).click()
-        self.driver.find_element(*self.user_head).click()
-        self.driver.find_element(*self.userphoto).click()
-        self.driver.find_element(*self.takephoto).click()
+        self.find_element(self.lv_mine).click()
+        self.find_element(self.user_head).click()
+        self.find_element(self.userphoto).click()
+        self.find_element(self.takephoto).click()
         self.wait(3,self.pictures).click()
         # WebDriverWait(self.driver,3).until(lambda x:x.find_element_by_id('com.huawei.camera:id/done_button'))
         # WebDriverWait(self.driver,3).until(EC.presence_of_element_located(self.multi_confirm))
         self.wait(8,self.multi_confirm)
-        self.driver.find_element(*self.multi_confirm).click()
-        self.driver.find_element(*self.save_tv).click()
-        self.driver.find_element(*self.usernickname).send_keys(name)
-        self.driver.find_element(*self.consumersign).send_keys(describe)
-        self.driver.find_element(*self.updatesubmit).click()
+        self.find_element(self.multi_confirm).click()
+        self.find_element(self.save_tv).click()
+        self.find_element(self.usernickname).send_keys(name)
+        self.find_element(self.consumersign).send_keys(describe)
+        self.find_element(self.updatesubmit).click()
         try:
             self.wait(5,self.lv_mine)
         except TimeoutException:
