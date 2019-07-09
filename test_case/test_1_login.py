@@ -25,7 +25,7 @@ class TestLogin(StartEnd):
         l.login_action(data[0],data[1])
         # self.assertTrue(l.check_loginStatus())
         i=0
-        while i<=3:
+        while i<=2:
             i=i+1
             if self.assertTrue(l.check_loginStatus()) is AssertionError:
                 l.login_action(data[0], data[1])

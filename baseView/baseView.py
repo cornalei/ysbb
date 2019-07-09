@@ -17,21 +17,11 @@ class BaseView(object):
         self.driver.get_screenshot_as_file(image_file)
         print('screenshot:',module,timestrmap,'.png')
 
-    def find_element(self,loc):
-        try:
-            WebDriverWait(self.driver,1).until(EC.presence_of_element_located(loc))
-        except Exception:
-            self.getScreenShot('error')
-        finally:
-            return WebDriverWait(self.driver,1).until(EC.presence_of_element_located(loc))
+    def find_element(self,*loc):
+        return WebDriverWait(self.driver,1).until(EC.presence_of_element_located(*loc))
 
-    def find_elements(self,loc):
-        try:
-            WebDriverWait(self.driver,1).until(EC.presence_of_all_elements_located(loc))
-        except Exception:
-            self.getScreenShot('error')
-        finally:
-            return WebDriverWait(self.driver,1).until(EC.presence_of_all_elements_located(loc))
+    def find_elements(self,*loc):
+        return WebDriverWait(self.driver,1).until(EC.presence_of_all_elements_located(*loc))
 
     def get_window_size(self):
         return self.driver.get_window_size()
@@ -39,21 +29,11 @@ class BaseView(object):
     def swipe(self,start_x, start_y, end_x, end_y, duration):
         return self.driver.swipe(start_x, start_y, end_x, end_y, duration)
 
-    def wait(self,num,element):
-        try:
-            WebDriverWait(self.driver,num).until(EC.presence_of_element_located(element))
-        except Exception:
-            self.getScreenShot('error')
-        finally:
-            return WebDriverWait(self.driver,num).until(EC.presence_of_element_located(element))
+    def wait(self,num,*element):
+        return WebDriverWait(self.driver,num).until(EC.presence_of_element_located(*element))
 
-    def waits(self,num,elements):
-        try:
-            WebDriverWait(self.driver,num).until(EC.presence_of_all_elements_located(elements))
-        except Exception:
-            self.getScreenShot('error')
-        finally:
-            return WebDriverWait(self.driver,num).until(EC.presence_of_all_elements_located(elements))
+    def waits(self,num,*elements):
+        return WebDriverWait(self.driver,num).until(EC.presence_of_all_elements_located(*elements))
 
 
 

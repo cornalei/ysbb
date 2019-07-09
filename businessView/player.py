@@ -74,7 +74,7 @@ class Player(Common):
         self.find_elements(self.collect_item)[0].click()
         time.sleep(2)
         try:
-            self.swipeUp_s(*element)
+            self.swipeUp_s(element)
         except TimeoutException:
             logging.error('收藏声音失败！')
             self.getScreenShot('收藏声音失败！')
@@ -91,7 +91,7 @@ class Player(Common):
         self.find_element(self.btn_reportcommit).click()
         self.find_element(self.btn_dialogconfirm).click()
         logging.info('举报成功')
-
+        self.wait(3,self.btn_downloadaction).click()
         self.wait(5,self.btn_shareaction).click()
         self.wait(1,self.share_wechat).click()
         try:

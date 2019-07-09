@@ -23,7 +23,7 @@ class TestPlayer(StartEnd):
 
     # @unittest.skip('test_play_check')
     def test_play_check(self):
-        logging.info('===举报、下载、分享')
+        logging.info('===举报、分享')
         p = Player(self.driver)
         self.assertTrue(p.play_check())
 
