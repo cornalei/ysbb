@@ -12,8 +12,11 @@ class TestIcon(StartEnd):
         i = Icon(self.driver)
         name = '小仙女' + str(random.randint(0, 1000))
         describe = '小仙女的个性签名：' + str(random.randint(0, 1000))
-
-        self.assertTrue(i.personal(name, describe))
+        try:
+            self.assertTrue(i.personal(name, describe))
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 
 

@@ -9,10 +9,14 @@ class TestRadio(StartEnd):
         logging.info('======test_radio=====')
         r = RadioStation(self.driver)
 
-        if self.assertTrue(r.radio_play()) is AssertionError:
-            logging.error('radio_play fail!')
-        else:
-            self.assertTrue(r.check_radio_play())
+        try:
+            if self.assertTrue(r.radio_play()) is AssertionError:
+                logging.error('radio_play fail!')
+            else:
+                self.assertTrue(r.check_radio_play())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 if __name__ == '__main__':
     unittest.main()

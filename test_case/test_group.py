@@ -15,16 +15,20 @@ class TestGroup(StartEnd):
         desc = '这是一个测试描述' + str(random.randint(10, 9000))
         text = 'test send message' + str(random.randint(10, 9000))
 
-        g.join_group(reason)
-        self.assertTrue(g.check_join_group())
+        try:
+            g.join_group(reason)
+            self.assertTrue(g.check_join_group())
 
-        if self.assertTrue(g.create_group(name,desc)) is AssertionError:
-            logging.error('该用户好友<2个')
-        else:
-            self.assertTrue(g.check_create_group())
+            if self.assertTrue(g.create_group(name,desc)) is AssertionError:
+                logging.error('该用户好友<2个')
+            else:
+                self.assertTrue(g.check_create_group())
 
-        g.send_message(text)
-        self.assertTrue(g.check_send_message())
+            g.send_message(text)
+            self.assertTrue(g.check_send_message())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 if __name__ == '__main__':
     unittest.main()

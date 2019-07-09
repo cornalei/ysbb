@@ -9,7 +9,11 @@ class TestSet(StartEnd):
     def test_sets(self):
         logging.info('======test_sets=====')
         s = Set(self.driver)
-        self.assertTrue(s.sets())
+        try:
+            self.assertTrue(s.sets())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 
 

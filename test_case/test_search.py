@@ -10,11 +10,14 @@ class TestSearch(StartEnd):
     def test_search(self):
         logging.info('======test_search=====')
         s = Search(self.driver)
-
-        s.search_action('a ')
-        self.assertTrue(s.check_voice())
-        self.assertTrue(s.check_user())
-        self.assertTrue(s.check_album())
+        try:
+            self.assertTrue(s.search_action('a '))
+            self.assertTrue(s.check_voice())
+            self.assertTrue(s.check_user())
+            self.assertTrue(s.check_album())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 if __name__ == '__main__':
     unittest.main()

@@ -9,19 +9,31 @@ class TestFriend(StartEnd):
     def test_friends(self):
         logging.info('======test_friends=====')
         f = Friend(self.driver)
-        self.assertTrue(f.friends())
+        try:
+            self.assertTrue(f.friends())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_friends')
     def test_newfriend(self):
         logging.info('======test_newfriend=====')
         f = Friend(self.driver)
-        self.assertTrue(f.newfriend('虫虫'))
+        try:
+            self.assertTrue(f.newfriend('虫虫'))
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_thirdfriend')
     def test_thirdfriend(self):
         logging.info('======test_thirdfriend=====')
         f = Friend(self.driver)
-        self.assertTrue(f.thirdfriend())
+        try:
+            self.assertTrue(f.thirdfriend())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 
 if __name__ == '__main__':

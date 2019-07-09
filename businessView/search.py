@@ -18,6 +18,7 @@ class Search(Common):
         self.find_element(self.bn_search).click()
         self.wait(2,self.et_serachkey).send_keys(keyword)
         self.wait(1,self.btn_searchstart).click()
+        return True
 
     def check_voice(self):
          logging.info('====check search_voice======')

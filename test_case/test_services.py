@@ -10,13 +10,21 @@ class TestServicese(StartEnd):
     def test_free(self):
         logging.info('======test免流量收听=====')
         s = Services(self.driver)
-        self.assertTrue(s.free())
+        try:
+            self.assertTrue(s.free())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_advice')
     def test_advice(self):
         logging.info('======test意见反馈=====')
         s = Services(self.driver)
-        self.assertTrue(s.advice())
+        try:
+            self.assertTrue(s.advice())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 
 

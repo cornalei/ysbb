@@ -1,14 +1,13 @@
-import unittest,os,time,sys
+import unittest,os,time
 from common.desired_caps import appium_desired
 import logging
 
 class StartEnd(unittest.TestCase):
-    # def getScreenShot(self):
-    #     timestrmap=time.strftime("%Y%m%d-%H.%M.%S")
-    #     image_file=os.path.dirname(os.path.dirname(__file__))+'/screenshots/%s.png' %timestrmap
-    #     # logging.info('get %s screenshot' %module)
-    #     self.driver.get_screenshot_as_file(image_file)
-    #     print('screenshot:',timestrmap,'.png')
+    def getScreenShot(self):
+        timestrmap=time.strftime("%Y%m%d-%H.%M.%S")
+        image_file=os.path.dirname(os.path.dirname(__file__))+'/screenshots/%s.png' %timestrmap
+        self.driver.get_screenshot_as_file(image_file)
+        print('screenshot:',timestrmap,'.png')
 
     def setUp(self):
         logging.info('=====setUp====')
@@ -16,6 +15,4 @@ class StartEnd(unittest.TestCase):
 
     def tearDown(self):
         logging.info('====tearDown====')
-        # if sys.exc_info()[0] is not None:
-        #     self.getScreenShot()
         self.driver.close_app()

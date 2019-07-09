@@ -13,8 +13,12 @@ class TestLogin(StartEnd):
         logging.info('======test_login_wechat=====')
         w = WechatLogin(self.driver)
 
-        w.login_action()
-        self.assertTrue(w.check_loginStatus())
+        try:
+            w.login_action()
+            self.assertTrue(w.check_loginStatus())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_login_z3356')
     def test_login_z5630(self):
@@ -22,34 +26,38 @@ class TestLogin(StartEnd):
         l=LoginView(self.driver)
         data=l.get_csv_data(self.csv_file,1)
 
-        l.login_action(data[0],data[1])
-        # self.assertTrue(l.check_loginStatus())
-        i=0
-        while i<=2:
-            i=i+1
-            if self.assertTrue(l.check_loginStatus()) is AssertionError:
-                l.login_action(data[0], data[1])
-            else:
-                break
+        try:
+            l.login_action(data[0],data[1])
+            self.assertTrue(l.check_loginStatus())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
+        # i=0
+        # while i<=2:
+        #     i=i+1
+        #     if self.assertTrue(l.check_loginStatus()) is AssertionError:
+        #         l.login_action(data[0], data[1])
+        #     else:
+        #         break
 
 
-    # @unittest.skip('skip test_login_1600')
-    # def test_login_1600(self):
-    #     logging.info('======test_login_18328021600=====')
-    #     l=LoginView(self.driver)
-    #     data = l.get_csv_data(self.csv_file, 2)
-    #
-    #     l.login_action(data[0], data[1])
-    #     self.assertFalse(l.check_loginStatus(),msg='===密码错误===')
+    @unittest.skip('skip test_login_1600')
+    def test_login_1600(self):
+        logging.info('======test_login_18328021600=====')
+        l=LoginView(self.driver)
+        data = l.get_csv_data(self.csv_file, 2)
 
-    # @unittest.skip('test_login_error')
-    # def test_login_error(self):
-    #     logging.info('======test_login_error=====')
-    #     l = LoginView(self.driver)
-    #     data = l.get_csv_data(self.csv_file, 3)
-    #
-    #     l.login_action(data[0], data[1])
-    #     self.assertFalse(l.check_loginStatus(),msg='===账号未注册哦===')
+        l.login_action(data[0], data[1])
+        self.assertFalse(l.check_loginStatus(),msg='===密码错误===')
+
+    @unittest.skip('test_login_error')
+    def test_login_error(self):
+        logging.info('======test_login_error=====')
+        l = LoginView(self.driver)
+        data = l.get_csv_data(self.csv_file, 3)
+
+        l.login_action(data[0], data[1])
+        self.assertFalse(l.check_loginStatus(),msg='===账号未注册哦===')
 
 
 

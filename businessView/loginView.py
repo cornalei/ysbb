@@ -25,6 +25,7 @@ class LoginView(Common):
         logging.info('click loginBtn')
         self.find_element(self.loginBtn).click()
         logging.info('login finished！')
+        return True
 
     def check_loginStatus(self):
         logging.info('====check_loginStatus======')

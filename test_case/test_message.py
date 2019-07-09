@@ -9,7 +9,11 @@ class TestMessage(StartEnd):
     def test_delete_message(self):
         logging.info('======test_delete_message=====')
         m = Message(self.driver)
-        self.assertTrue(m.delete_message())
+        try:
+            self.assertTrue(m.delete_message())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 
 

@@ -14,17 +14,30 @@ class TestRecommended(StartEnd):
     # @unittest.skip('test_story')
     def test_1story(self):
         r = Recommended(self.driver)
-        self.assertTrue(r.story())
+        try:
+            self.assertTrue(r.story())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_check')
     def test_check(self):
         r = Recommended(self.driver)
-        self.assertTrue(r.check())
+        try:
+            self.assertTrue(r.check())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_focus')
     def test_focus(self):
         r = Recommended(self.driver)
-        self.assertTrue(r.focus())
+        try:
+            self.assertTrue(r.focus())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
+
 
 
 

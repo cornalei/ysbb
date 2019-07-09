@@ -9,25 +9,41 @@ class TestHardcover(StartEnd):
     def test_todayrecomend(self):
         logging.info('======test_todayrecomend=====')
         h = Hardcover(self.driver)
-        self.assertTrue(h.todayrecomend())
+        try:
+            self.assertTrue(h.todayrecomend())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_heavyfine')
     def test_heavyfine(self):
         logging.info('======test_heavyfine=====')
         h = Hardcover(self.driver)
-        self.assertTrue(h.heavyfine())
+        try:
+            self.assertTrue(h.heavyfine())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_newalbum')
     def test_newalbum(self):
         logging.info('======test_newalbum=====')
         h = Hardcover(self.driver)
-        self.assertTrue(h.newalbum())
+        try:
+            self.assertTrue(h.newalbum())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
     # @unittest.skip('test_buyalbums')
     def test_buyalbums(self):
         logging.info('======test_buyalbums=====')
         h = Hardcover(self.driver)
-        self.assertTrue(h.buyalbums())
+        try:
+            self.assertTrue(h.buyalbums())
+        except BaseException as error:
+            self.getScreenShot()
+            raise error
 
 if __name__ == '__main__':
     unittest.main()
