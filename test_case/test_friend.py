@@ -12,7 +12,7 @@ class TestFriend(StartEnd):
         try:
             self.assertTrue(f.friends())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_friends')
@@ -22,7 +22,7 @@ class TestFriend(StartEnd):
         try:
             self.assertTrue(f.newfriend('虫虫'))
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_thirdfriend')
@@ -32,7 +32,7 @@ class TestFriend(StartEnd):
         try:
             self.assertTrue(f.thirdfriend())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

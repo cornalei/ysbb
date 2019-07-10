@@ -15,7 +15,7 @@ class TestRadio(StartEnd):
             else:
                 self.assertTrue(r.check_radio_play())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 if __name__ == '__main__':

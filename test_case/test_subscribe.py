@@ -13,7 +13,7 @@ class TestSubscribe(StartEnd):
             s.subscribes_play()
             self.assertTrue(s.check_subscribe_play())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     #订阅大家都在听
@@ -25,7 +25,7 @@ class TestSubscribe(StartEnd):
             s.subscribe()
             self.assertTrue(s.check_subscribe())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # 播放我的订阅中专辑声音
@@ -37,7 +37,7 @@ class TestSubscribe(StartEnd):
             s.subscribe_play()
             self.assertTrue(s.check_subscribe_play())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

@@ -11,7 +11,7 @@ class TestPlayer(StartEnd):
         try:
             self.assertTrue(p.forwarding())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_play_collection')
@@ -20,7 +20,7 @@ class TestPlayer(StartEnd):
         try:
             self.assertTrue(p.check_collection())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_play_comments')
@@ -30,7 +30,7 @@ class TestPlayer(StartEnd):
             p.comments()
             self.assertTrue(p.check_comments())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_play_check')
@@ -40,7 +40,7 @@ class TestPlayer(StartEnd):
         try:
             self.assertTrue(p.play_check())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

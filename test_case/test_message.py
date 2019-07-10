@@ -12,7 +12,7 @@ class TestMessage(StartEnd):
         try:
             self.assertTrue(m.delete_message())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

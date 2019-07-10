@@ -17,7 +17,7 @@ class TestLogin(StartEnd):
             w.login_action()
             self.assertTrue(w.check_loginStatus())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_login_z3356')
@@ -30,7 +30,7 @@ class TestLogin(StartEnd):
             l.login_action(data[0],data[1])
             self.assertTrue(l.check_loginStatus())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
         # i=0
         # while i<=2:

@@ -1,5 +1,5 @@
 import unittest,subprocess,os,socket
-from HTMLTestRunner import HTMLTestRunner
+from HTMLTestRunner_cn import HTMLTestRunner
 import time,logging
 from time import ctime
 
@@ -66,7 +66,7 @@ def appium_start(host, port):
 def run_case():
     #加载测试用例
     discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py') #匹配test开头的用例
-    # discover=unittest.defaultTestLoader.discover(test_dir,pattern='test_message.py')
+    # discover=unittest.defaultTestLoader.discover(test_dir,pattern='test_friend.py')
 
     #定义报告的文件格式
     now=time.strftime('%Y-%m-%d %H_%M_%S')
@@ -75,7 +75,7 @@ def run_case():
     #运行用例并生成测试报告
     with open(report_name,'wb') as f:
         # verbosity测试结果输出的详细程度，save_last_try：True仅保留最后一次运行的测试结果
-        runner=HTMLTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告',verbosity=2, retry=0, save_last_try=True)
+        runner=HTMLTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告',verbosity=2, retry=1, save_last_try=True)
         logging.info('start run test case...')
         runner.run(discover)
 
@@ -86,7 +86,6 @@ def start_appium_action(host,port):
         return True
     else:
         appium_start(host, port)
-        time.sleep(5)
         return False
 
 def start_devices_action(host,port):
@@ -94,6 +93,7 @@ def start_devices_action(host,port):
     if start_appium_action(host,port):
         print('finis！')
     else:
+        time.sleep(10)
         run_case()
 
 

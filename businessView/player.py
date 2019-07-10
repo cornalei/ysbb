@@ -95,7 +95,7 @@ class Player(Common):
         self.wait(5,self.btn_shareaction).click()
         self.wait(1,self.share_wechat).click()
         try:
-            self.wait(1,self.published).click()
+            self.wait(3,self.published).click()
         except  TimeoutException:
             logging.error('分享声音失败！')
             self.getScreenShot('分享声音失败！')

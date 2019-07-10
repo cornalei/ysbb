@@ -27,7 +27,7 @@ class TestGroup(StartEnd):
             g.send_message(text)
             self.assertTrue(g.check_send_message())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 if __name__ == '__main__':

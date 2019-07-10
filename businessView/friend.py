@@ -135,12 +135,6 @@ class Friend(Common):
 
 
 
-
-
-
-
-
-
 if __name__ == '__main__':
     driver=appium_desired()
     f=Friend(driver)

@@ -1,7 +1,6 @@
 import unittest,subprocess,os,socket
-from HTMLTestRunner import HTMLTestRunner
 from time import ctime
-from HTMLTestRunner import HTMLTestRunner
+from HTMLTestRunner_cn import HTMLTestRunner
 import time,logging
 import smtplib                           #发送邮件模块
 from email.mime.text import MIMEText    #定义邮件内容
@@ -27,7 +26,7 @@ def run_case():
 
     #运行用例并生成测试报告
     with open(report_name,'wb') as f:
-        runner=HTMLTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告')
+        runner=HTMLTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告',verbosity=2, retry=1, save_last_try=True)
         logging.info('start run test case...')
         runner.run(discover)
 
@@ -122,7 +121,7 @@ def start_appium_action(host,port):
         return True
     else:
         appium_start(host, port)
-        time.sleep(5)
+        time.sleep(10)
         return False
 
 def start_devices_action(host,port):

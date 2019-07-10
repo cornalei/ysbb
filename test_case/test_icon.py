@@ -15,7 +15,7 @@ class TestIcon(StartEnd):
         try:
             self.assertTrue(i.personal(name, describe))
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

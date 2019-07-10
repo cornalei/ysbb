@@ -13,7 +13,7 @@ class TestServicese(StartEnd):
         try:
             self.assertTrue(s.free())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_advice')
@@ -23,7 +23,7 @@ class TestServicese(StartEnd):
         try:
             self.assertTrue(s.advice())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

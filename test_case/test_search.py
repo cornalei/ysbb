@@ -16,7 +16,7 @@ class TestSearch(StartEnd):
             self.assertTrue(s.check_user())
             self.assertTrue(s.check_album())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 if __name__ == '__main__':

@@ -17,7 +17,7 @@ class TestRecording(StartEnd):
             r.recording()
             self.assertTrue(r.check_recording())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_upload_voice')
@@ -30,7 +30,7 @@ class TestRecording(StartEnd):
             r.upload_voice()
             self.assertTrue(r.check_upload_voice())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

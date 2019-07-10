@@ -12,7 +12,7 @@ class TestHardcover(StartEnd):
         try:
             self.assertTrue(h.todayrecomend())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_heavyfine')
@@ -22,7 +22,7 @@ class TestHardcover(StartEnd):
         try:
             self.assertTrue(h.heavyfine())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_newalbum')
@@ -32,7 +32,7 @@ class TestHardcover(StartEnd):
         try:
             self.assertTrue(h.newalbum())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_buyalbums')
@@ -42,7 +42,7 @@ class TestHardcover(StartEnd):
         try:
             self.assertTrue(h.buyalbums())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 import unittest,socket,multiprocessing
 from commons.multi_devices import appium_start
-from  BSTestRunner import BSTestRunner
+from  HTMLTestRunner_cn import HTMLTestRunner
 import time,logging
 
 #bat处理执行时使用
@@ -33,7 +33,7 @@ def start_appium_action(host,port):
         return True
     else:
         appium_start(host, port)
-        time.sleep(5)
+        time.sleep(10)
         return False
 
 def appium_start_sync():
@@ -64,7 +64,7 @@ def run_case():
 
     #运行用例并生成测试报告
     with open(report_name,'wb') as f:
-        runner=BSTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告')
+        runner=HTMLTestRunner(stream=f,title='一说宝宝测试报告',description='一说宝宝安卓版自动化测试报告')
         logging.info('start run test case...')
         runner.run(discover)
 

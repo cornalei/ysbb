@@ -12,7 +12,7 @@ class TestSet(StartEnd):
         try:
             self.assertTrue(s.sets())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 

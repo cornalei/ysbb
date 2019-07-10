@@ -195,7 +195,8 @@ class Template_mixin(object):
         3:u'跳过',
     }
 
-    DEFAULT_TITLE = 'Unit Test Report'
+    DEFAULT_TESTER = 'Leilani'
+    DEFAULT_TITLE = '测试报告'
     DEFAULT_DESCRIPTION = ''
 
     # ------------------------------------------------------------------------
@@ -665,7 +666,7 @@ tr[id^=st]  td { background-color: #6f6f6fa1 !important ; }
 
     REPORT_TMPL = """
 <div id='show_detail_line' style=" float: left;  width: 100%%;">
-<a class="abstract detail_button" href='javascript:showCase(0,%(channel)s)'>概要[%(Pass_p).2f%%]</a>
+<a class="abstract detail_button" href='javascript:showCase(0,%(channel)s)'>通过率[%(Pass_p).2f%%]</a>
 <a class="passed  detail_button" href='javascript:showCase(1,%(channel)s)'>通过[%(Pass)s]</a>
 <a class="failed  detail_button" href='javascript:showCase(2,%(channel)s)'>失败[%(fail)s]</a>
 <a class="errored  detail_button" href='javascript:showCase(3,%(channel)s)'>错误[%(error)s]</a>
@@ -684,17 +685,17 @@ tr[id^=st]  td { background-color: #6f6f6fa1 !important ; }
 <col align='right' />
 </colgroup>
 <tr id='header_row'>
-    <th>测试组/测试用例</th>
-    <th>总数</th>
+    <th>用例集/测试用例</th>
+    <th>总计</th>
     <th>通过</th>
     <th>失败</th>
     <th>错误</th>
-    <th>视图</th>
+    <th>详细</th>
     <th>错误截图</th>
 </tr>
 %(test_list)s
 <tr id='total_row'>
-    <th>统计</th>
+    <th>总计</th>
     <th>%(count)s</th>
     <th>%(Pass)s</th>
     <th>%(fail)s</th>
@@ -898,14 +899,14 @@ class _TestResult(TestResult):
         _, _exc_str = self.failures[-1]
         output = self.complete_output()
         self.result.append((1, test, output, _exc_str))
-        if not getattr(test, "driver",""):
-            pass
-        else:
-            try:
-                driver = getattr(test, "driver")
-                test.imgs.append(driver.get_screenshot_as_base64())
-            except Exception as e:
-                pass
+        # if not getattr(test, "driver", ""):
+        #     pass
+        # else:
+        #     try:
+        #         driver = getattr(test, "driver")
+        #         test.imgs.append(driver.get_screenshot_as_base64())
+        #     except Exception as e:
+        #         pass
         if self.verbosity > 1:
             sys.stderr.write('F  ')
             sys.stderr.write(str(test))
@@ -920,14 +921,14 @@ class _TestResult(TestResult):
         _, _exc_str = self.errors[-1]
         output = self.complete_output()
         self.result.append((2, test, output, _exc_str))
-        if not getattr(test, "driver",""):
-            pass
-        else:
-            try:
-                driver = getattr(test, "driver")
-                test.imgs.append(driver.get_screenshot_as_base64())
-            except Exception:
-                pass
+        # if not getattr(test, "driver", ""):
+        #     pass
+        # else:
+        #     try:
+        #         driver = getattr(test, "driver")
+        #         test.imgs.append(driver.get_screenshot_as_base64())
+        #     except Exception:
+        #         pass
         if self.verbosity > 1:
             sys.stderr.write('E  ')
             sys.stderr.write(str(test))
@@ -949,7 +950,7 @@ class _TestResult(TestResult):
             sys.stderr.write('K')
 
 class HTMLTestRunner(Template_mixin):
-    def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None,is_thread=False, retry=1,save_last_try=True):
+    def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None,tester=None,is_thread=False, retry=1,save_last_try=True):
         self.stream = stream
         self.retry = retry
         self.is_thread=is_thread
@@ -965,6 +966,10 @@ class HTMLTestRunner(Template_mixin):
             self.description = self.DEFAULT_DESCRIPTION
         else:
             self.description = description
+        if tester is None:
+            self.tester = self.DEFAULT_TESTER
+        else:
+            self.tester = tester
 
     def run(self, test):
         "Run the given test case or test suite."
@@ -1028,9 +1033,10 @@ class HTMLTestRunner(Template_mixin):
         else:
             status = 'none'
         return [
+            (u'测试人员', self.tester),
             (u'开始时间', startTime),
-            (u'耗时', duration),
-            (u'状态', status),
+            (u'合计耗时', duration),
+            (u'测试结果', status),
         ]
 
     def generateReport(self, test, result):
@@ -1057,6 +1063,7 @@ class HTMLTestRunner(Template_mixin):
     def _generate_stylesheet(self):
         return self.STYLESHEET_TMPL
 
+    # 增加Tester显示 -Findyou
     def _generate_heading(self, report_attrs):
         a_lines = []
         for name, value in report_attrs:
@@ -1069,6 +1076,7 @@ class HTMLTestRunner(Template_mixin):
             title=saxutils.escape(self.title),
             parameters=''.join(a_lines),
             description=saxutils.escape(self.description),
+            tester=saxutils.escape(self.tester),
         )
         return heading
 

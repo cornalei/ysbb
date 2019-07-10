@@ -17,7 +17,7 @@ class TestRecommended(StartEnd):
         try:
             self.assertTrue(r.story())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_check')
@@ -26,7 +26,7 @@ class TestRecommended(StartEnd):
         try:
             self.assertTrue(r.check())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
     # @unittest.skip('test_focus')
@@ -35,7 +35,7 @@ class TestRecommended(StartEnd):
         try:
             self.assertTrue(r.focus())
         except BaseException as error:
-            self.getScreenShot()
+            self.add_img()
             raise error
 
 
