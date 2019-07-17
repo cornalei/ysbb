@@ -86,6 +86,7 @@ def start_appium_action(host,port):
         return True
     else:
         appium_start(host, port)
+        time.sleep(10)
         return False
 
 def start_devices_action(host,port):
@@ -93,7 +94,6 @@ def start_devices_action(host,port):
     if start_appium_action(host,port):
         print('finis！')
     else:
-        time.sleep(10)
         run_case()
 
 
